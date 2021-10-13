@@ -1,423 +1,552 @@
-<!DOCTYPE html pt-br>
-    <html>
-    <head>
-        <title>teste a missão</title>
-        <meta charset="utf-8">  
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>seção</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- nome gutenberg-->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- legenda da foto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 
-        <style type="text/css">
-            @media (min-width:280px) {
-                .logo {
-                float: left;
-                padding-left: 4%;
-                padding-top: 25%;
-                position: fixed;
-                } 
-                .logo img {
-                width: 55px;
-                height: auto;
-                } 
-                .icons {
-                padding-top: 20px;    
-                padding-left: 20px;
-                }
-                header.masthead .masthead-subheading {
-                font-size: 60px;
-                margin-bottom: 25px;
-                font-family: 'Pacifico', cursive;
-                transform: rotate(-10deg);
-                color: #fff;
-                text-shadow: black 0.1em 0.1em 0.2em;
-                }
-                .materia .corpo {
-                text-align: left;
-                padding-left: 10px;
-                padding-right: 10px;
-                color: rgba(100, 102, 102, 0.9);
-                }
-                .corpo h6 {
-                color: rgba(100, 102, 102, 0.9);
-                font-size: 8px;
-                text-align: right; 
-                }
-            }
-            @media (min-width:480px) {
-                .logo {
-                float: left;
-                padding-left: 3%;
-                padding-top: 3%;
-                position: fixed;
-                } 
-                .logo img {
-                width: 55px;
-                height: auto;
-                } 
-                .icons {
-                padding-top: 20px;    
-                padding-left: 30%;
-                }
-                header.masthead .masthead-subheading {
-                font-size: 80px;
-                margin-bottom: 25px;
-                font-family: 'Pacifico', cursive;
-                transform: rotate(-10deg);
-                color: #fff;
-                text-shadow: black 0.1em 0.1em 0.2em;
-                }
-                .materia .corpo {
-                text-align: left;
-                padding-left: 30px;
-                padding-right: 30px;
-                color: rgba(100, 102, 102, 0.9);
-                }
-                .corpo h6 {
-                color: rgba(100, 102, 102, 0.9);
-                font-size: 10px;
-                text-align: right; 
-                }
-            }
-            @media (min-width:600px) {
-                .logo {
-                float: left;
-                padding-left: 3%;
-                padding-top: 2%;
-                position: fixed;
-                } 
-                .logo img {
-                width: 55px;
-                height: auto;
-                } 
-                .icons {
-                padding-top: 20px;    
-                padding-left: 44%;
-                }
-                header.masthead .masthead-subheading {
-                font-size: 93px;
-                margin-bottom: 25px;
-                font-family: 'Pacifico', cursive;
-                transform: rotate(-10deg);
-                color: #fff;
-                text-shadow: black 0.1em 0.1em 0.2em;
-                }
-                .materia .corpo {
-                text-align: left;
-                padding-left: 50px;
-                padding-right: 50px;
-                color: rgba(100, 102, 102, 0.9);
-                }
-                .corpo h6 {
-                color: rgba(100, 102, 102, 0.9);
-                font-size: 12px;
-                text-align: right; 
-                }
-            }
-            @media (min-width:801px) {
-                .logo {
-                float: left;
-                padding-left: 6%;
-                padding-top: 1%;
-                position: fixed;
-                } 
-                .logo img {
-                width: 55px;
-                height: auto;
-                } 
-                .icons {
-                padding-top: 20px;    
-                padding-left: 58%;
-                } 
-                header.masthead .masthead-subheading {
-                font-size: 110px;
-                margin-bottom: 25px;
-                font-family: 'Pacifico', cursive;
-                transform: rotate(-10deg);
-                color: #fff;
-                text-shadow: black 0.1em 0.1em 0.2em;
-                }
-                .materia .corpo {
-                text-align: left;
-                padding-left: 70px;
-                padding-right: 70px;
-                color: rgba(100, 102, 102, 0.9);
-                }
-                .corpo h6 {
-                color: rgba(100, 102, 102, 0.9);
-                font-size: 12px;
-                text-align: right; 
-                }  
-            }
-            @media (min-width:1200px) {
-                .logo {
-                float: left;
-                padding-left: 9%;
-                padding-top: 1%;
-                position: fixed;
-                } 
-                .logo img {
-                width: 55px;
-                height: auto;
-                } 
-                .icons {
-                padding-top: 20px;    
-                padding-left: 72%;
-                }
-                header.masthead .masthead-subheading {
-                font-size: 120px;
-                margin-bottom: 25px;
-                font-family: 'Pacifico', cursive;
-                transform: rotate(-10deg);
-                color: #fff;
-                text-shadow: black 0.1em 0.1em 0.2em;
-                } 
-                .materia .corpo {
-                text-align: left;
-                padding-left: 120px;
-                padding-right: 120px;
-                color: rgba(100, 102, 102, 0.9);
-                }
-                .corpo h6 {
-                color: rgba(100, 102, 102, 0.9);
-                font-size: 12px;
-                text-align: right; 
-                }     
-            }
+    <style type="text/css">
+      @media (min-width: 376px) {
+      .logo {
+        float: left;
+        padding-left: 4%;
+        padding-top: 4%;
+        position: fixed;
+      }
+      .logo img {
+        width: 55px;
+        height: auto;
+      }
+      .icons {
+        padding-top: 4%;
+        padding-left: 30%;
+      }
+      header.masthead {
+        padding-top: 10.5rem;
+        padding-bottom: 6rem;
+        text-align: center;
+        color: #fff;
+        background-image: url("../Novo%20site/imagem/header-bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        }
+        header.masthead .masthead-subheading {
+        font-size: 4.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 25px;
+        font-family: 'Pacifico', cursive;
+        transform: rotate(-10deg);
+        color: #fff;
+        text-shadow: black 0.1em 0.1em 0.2em;
+      }
+      .clean {
+        padding-top: 20px;
+      }
+      .comp p {
+        text-align: center;
+        font-size: 12;
+        background-color: rgba(100, 102, 102, 0.4);
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .filipeta {
+        background-color: #64a19d;
+        width: 250px;;
+        margin-left: auto;
+        margin-right: auto;
+        color: #64a19d;
+      }
+      .filipeta1 {
+        background-color: #64a19d;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #64a19d;
+        height: 50px;
+        padding-top: 40px;
+      }
+      .laptop img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 290px;
+      }
+      header.masthead .masthead-heading {
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 3.25rem;
+        margin-bottom: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+      .materia {
+        background-color: rgba(173, 166, 149, 0.3);
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      .materia h1 {
+        text-align:center;
+        color: #736e64; 
+      }
+      .materia .corpo {
+        text-align: left;
+        padding-left: 5%;
+        padding-right: 5%;
+        color: rgba(100, 102, 102, 0.9);
+        font-size: 12px;
+      }
+      }
+      @media (min-width: 768px) {
+      .clean {
+        padding-top: 20px;
+      }
+      .comp p {
+        text-align: center;
+        font-size: 16;
+        background-color: rgba(100, 102, 102, 0.4);
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .laptop img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+      }
+      header.masthead .masthead-heading {
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 3.25rem;
+        margin-bottom: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+      header.masthead .masthead-subheading {
+        font-size: 4.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 25px;
+      font-family: 'Pacifico', cursive;
+      transform: rotate(-10deg);
+      color: #fff;
+      text-shadow: black 0.1em 0.1em 0.2em;
+      }
+      header.masthead {
+        padding-top: 10.5rem;
+        padding-bottom: 6rem;
+        text-align: center;
+        color: #fff;
+        background-image: url("../Novo%20site/imagem/header-bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+      }
+      .logo {
+        float: left;
+        padding-left: 10%;
+        padding-top: 2%;
+        position: fixed;
+      }
+      .logo img {
+        width: 80px;
+        height: auto;
+      }
+      .icons {
+        padding-top: 3%;
+        padding-left: 50%;
+      }
+      .materia {
+        background-color: rgba(173, 166, 149, 0.3);
+        padding-bottom: 15px;
+        padding-top: 15px;
+      }
+      .materia h1 {
+        text-align:center; 
+      }
+      .materia .corpo {
+        text-align: left;
+        padding-left: 10%;
+        padding-right: 10%;
+        color: rgba(100, 102, 102, 0.9);
+        font-size: 16px;
+      }
+      }
+      @media (min-width: 1200px) {
+      .clean {
+        padding-top: 50px;
+      }
+      .comp p {
+        text-align: center;
+        font-size: 16;
+        background-color: rgba(100, 102, 102, 0.4);
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .filipeta {
+        background-color: #64a19d;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        color: #64a19d;
+      }
+      .filipeta1 {
+        background-color: #64a19d;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        color: #64a19d;
+        height: 30px;
+        padding-top: 5%;
+      }
+      .laptop img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
 
-            header.masthead {
-            padding-top: 10.5rem;
-            padding-bottom: 6rem;
-            text-align: center;
-            color: #fff;
-            background-image: url("imagens/header-bg.jpg");
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-position: center center;
-            background-size: cover;
-            }
+      }
+      header.masthead {
+        padding-top: 10.5rem;
+        padding-bottom: 6rem;
+        text-align: center;
+        color: #fff;
+        background-image: url("imagem/header-bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+      }
+      header.masthead .masthead-subheading {
+        font-size: 4.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 25px;
+      font-family: 'Pacifico', cursive;
+      transform: rotate(-10deg);
+      color: #fff;
+      text-shadow: black 0.1em 0.1em 0.2em;
+      }
+      header.masthead .masthead-heading {
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 3.25rem;
+        margin-bottom: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+      .logo {
+        float: left;
+        padding-left: 15%;
+        padding-top: 2%;
+        position: fixed;
+      }
+      .logo img {
+        width: 80px;
+        height: auto;
+      }
+      .icons {
+        padding-top: 3%;
+        padding-left: 70%;
+      }
+      .materia {
+        background-color: rgba(173, 166, 149, 0.1);
+        padding-bottom: 30px;
+        padding-top: 30px;
+      }
+      .materia h1 {
+        text-align:center; 
+      }
+      .materia .corpo {
+        text-align: left;
+        padding-left: 20%;
+        padding-right: 20%;
+        color: rgba(100, 102, 102, 0.9);
+        font-size: 18px;
+      }
+      }
+      .cards {
+        align-items: center;
+        padding-top: 40px;
+      }
+      .row {
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        border-radius: 5px;
+        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+        padding: 30px;
+        margin: 20px;
+        width: 400px;
+        height: 420px;
+        transition: all 0.3s ease-out;
+        background-color: rgba(143, 115, 64, 0.2);
+      }
+      .card:hover {
+        transform: translateX(-15px);
+        cursor: pointer;
+      }
+      .card p {
+        color: rgba(100, 102, 102, 0.9);
+        font-size: 16px;
+      }
+      .card h2 {
+        color: #736e64;
+      }
+      .image {
+        float: right;
+        max-width: 64px;
+        max-height: 64px;
+      }
+      .blue {
+        border-left: 3px solid #ffa348;
+      }
+      .green {
+        border-left: 3px solid #3bb54a;
+      }
+      .red {
+        border-left: 3px solid #b3404a;
+      }
+      .texto {
+        background-color: rgba(100, 161, 155, 0.5);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        }
+      .boton {
+      padding-top: 30px;
+      }
+      .card h6 {
+      color: rgba(100, 102, 102, 0.9);
+        font-size: 12px;
+        text-align: right;
+      }
+      .card h6 {
+        color: rgba(100, 102, 102, 0.9);
+        font-size: 12px;
+        text-align: right;
+      }
+      .corpo h6 {
+        color: rgba(100, 102, 102, 0.9);
+        font-size: 12px;
+        text-align: right; 
+      }
+      .contato {
+        border-radius: 5px;
+        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+        padding: 30px;
+        margin: 20px;
+        width: 200px;
+        height: 160px;
+        transition: all 0.3s ease-out;
+        background-color: rgba(143, 115, 64, 0.2);
+      }
+      .contato p {
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 20px;
+        color: #736e64;
+      }
+      .contato h2 {
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #736e64;
+      }
+      .contato:hover {
+        background-color: rgba(0. 0. 0. 0.4);
+        color: red;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .pe h2 {
+        text-align: center;
+        color: rgba(100, 102, 102, 0.9);
+        background-color: rgba(143, 115, 64, 0.2);
+        width: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.5);
+      }
+      .pe img {
+        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+      }
+      .final {
+        background-color: #64a19d;
+        height: 60px;
+        padding-top: 20px;
+        
+      }
+      .final h6 {
+        background-color: rgba(143, 115, 64, 0.2);
+        width: 500px;
+        text-align: center;
+        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.5);
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+      }
+      .legenda p {
+        text-align: center;
+        color: rgba(100, 102, 102, 0.9);
+        margin-left: 2%;
+        margin-right: 2%;
+        font-family: 'Courgette', cursive;
+      }
+      .legenda a {
+        color: chocolate;
+        font-family: 'Pacifico', cursive;
+      }
+      .prazer {
+        color: rgb(240, 241, 241);
+        font-size: 50px;
+        font-family: 'Pacifico', cursive;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        transform: rotate(-8deg);
+      }
 
-            header.masthead .masthead-heading {
-            font-size: 2.25rem;
-            font-weight: 700;
-            line-height: 3.25rem;
-            margin-bottom: 2rem;
-            padding-top: 3rem;
-            padding-bottom: 6rem;
-            text-shadow: black 0.1em 0.1em 0.2em;
-            font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            }
-            .cards {
-            align-items: center;
-            padding-top: 40px;
-            }
-            .row {
-            justify-content: center;
-            align-items: center;
-            }
-            .card {
-            border-radius: 5px;
-            box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-            padding: 30px;
-            margin: 20px;
-            width: 400px;
-            height: 420px;
-            transition: all 0.3s ease-out;
-            background-color: rgba(143, 115, 64, 0.2);
-            }
-            .card:hover {
-            transform: translateX(-15px);
-            cursor: pointer;
-            }
-            .card p {
-            color: rgba(100, 102, 102, 0.9);
-            font-size: 16px;
-            }
-            .card h2 {
-            color: #736e64;
-            }
-            .image {
-            float: right;
-            max-width: 64px;
-            max-height: 64px;
-            }
-            .blue {
-            border-left: 3px solid #ffa348;
-            }
-            .green {
-            border-left: 3px solid #3bb54a;
-            }
-            .red {
-            border-left: 3px solid #b3404a;
-            }
-            .texto {
-            background-color: rgba(100, 161, 155, 0.5);
-            padding-top: 20px;
-            padding-bottom: 20px;
-            }
-            .boton {
-            padding-top: 30px;
-            }
-            .card h6 {
-            color: rgba(100, 102, 102, 0.9);
-            font-size: 12px;
-            text-align: right;
-            }
-            .card h6 {
-            color: rgba(100, 102, 102, 0.9);
-            font-size: 12px;
-            text-align: right;
-            }
-            .materia {
-            background-color: rgba(173, 166, 149, 0.1);
-            padding-bottom: 30px;
-            padding-top: 30px;
-            }
-            .materia h1 {
-            text-align:center;
-            color:#736e64; 
-            }
-            .contato {
-            border-radius: 5px;
-            box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-            padding: 30px;
-            margin: 20px;
-            width: 200px;
-            height: 160px;
-            transition: all 0.3s ease-out;
-            background-color: rgba(143, 115, 64, 0.2);
-            }
-            .contato p {
-            font-size: 12px;
-            text-align: center;
-            padding-bottom: 20px;
-            }
-            .contato h2 {
-            font-size: 14px;
-            padding-top: 30px;
-            color: #736e64;
-            }
-            .contato:hover {
-            background-color: rgba(0. 0. 0. 0.4);
-            color: red;
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            -o-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            transform: scale(1.1);
-            }
+    </style>
+
+  </head>
+  <body id="top">
+    <!-- testeira -->
+    <section class="menu">
+      <div class="logo">
+        <a href="#top"><img src="imagem/logo%20base%20DM_final%20quadrado.png" alt="" title="DM - blog top"></a>
+      </div>
+      <div class="icons">
+        <a class="btn btn-dark btn-social mx-2" href="#ultimas-postagens"><i class="fas fa-book-open" title="últimos posts"></i></a>
+        <a class="btn btn-dark btn-social mx-2" href="#nova-postagem"><i class="fas fa-text-height" title="texto mais recente"></i></a>
+        <a class="btn btn-dark btn-social mx-2" href="#contato"><i class="fas fa-coffee" title="fale comigo"></i></a> 
+        <a class="btn btn-dark btn-social mx-2" href="mailto:didispbr@gmail.com?subject=Contato" title="e-mail"><i class="fas fa-envelope-open-text"></i></a>
+        <a class="btn btn-dark btn-social mx-2" href="https://dimarketingpolitico.github.io/" target="_blank" title="home"><i class="fas fa-house-user"></i></a><p></p>
+      </div>
+      
+    </section>
+    <!-- imagem principal -->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading">Blog do Dids</div>
+        <img class="boton" src="imagem/caricatura%20dids%20boton.png" alt="">
+        <div class="prazer">Prazer em ter você por aqui!</div>
+      </div>
+    </header>
+    <div class="legenda"><p>A maioria dos jornalistas até o início do século XX era tipógrafo. Compunham seus textos à mão. Com 15 anos comecei a trabalhar em Jornal que produzia seus textos com linotipos. Os títulos ainda eram feitos à mão, um a um. A gente imprimia as provas no prelo manual para as correções e posteriormente o acabamento das pesadas páginas de chumbo. Também vivi as eras do past-up e o fotolito. Mais ágil, o processo possibilitou melhor acabamento e design ao material impresso. Hoje,  na editoração eletrônica, todo material é organizado em uma página no computador, que vai direto para a impressora, processo denominado computer-to-plate. A foto acima é uma homenagem ao famoso <a href="https://pt.wikipedia.org/wiki/Johannes_Gutenberg" style="text-decoration:none" target="_blank"/>Johannes Gutenberg</a>, que inventou os tipos móveis, bem parecidos aos da foto acima, sua criação possibilitou a gente chegar até aqui, na Web.</p></div>
+    <div class="clean" ></div>
+    <div class="clean" ></div>
+    <!-- ultimo post -->
+    <section class="materia" id="nova-postagem" >
+      <h1>Como fazer marketing em tempos de crise</h1>
+      <div class="corpo">
+        <p>*Por Didi Pasqualini</p>
+        <!-- corpo do texto -->
+
+        <p>Se tudo está mudando, por que o <b>marketing</b> deve ser o mesmo? Vivemos uma época de grandes mudanças, pautadas pela automação, gamificação, desafios ecológicos e, por que não, o <b>marketing político</b>?<p>
+        Há certo grau de desigualdade nas candidaturas. Há sempre grupos que têm mais dinheiro, são mais bem preparados ou posicionados, gozam de alguns privilégios - como gênero ou raça, têm outros atributos que, logo de partida, dão a esta camada da sociedade certa vantagem competitiva que devemos levar em consideração, o que, na maioria das vezes, os estrategistas não fazem.<p>
+        <!-- anúncio sou freelas -->
+        <div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-I_3Q-YdsxsE/YTJEZCeoYOI/AAAAAAAALXY/HBzM3kFnAk8bQShjKqSJA8ygm4JgFkIfQCLcBGAsYHQ/s1040/sou%2Bfrilas2.gif" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="400" data-original-height="993" data-original-width="1040" src="https://1.bp.blogspot.com/-I_3Q-YdsxsE/YTJEZCeoYOI/AAAAAAAALXY/HBzM3kFnAk8bQShjKqSJA8ygm4JgFkIfQCLcBGAsYHQ/s400/sou%2Bfrilas2.gif"/></a></div>
+        <!-- continua o texto -->
+        Por mais estratégico que seja, ao olhar para os meios digitais como “ambientes” em que as massas “se encontram”, restam poucas dúvidas sobre como os algoritmos estão mudando a percepção de realidade do consumidor. A questão a ser debatida é: como resgatar o eleitor das bolhas individualistas de comodidade em que ele vive e mostrar que precisa ter uma compreensão de mundo diferente da virtualidade? Ou ainda, como a política pode sair do seu local específico de fala e ocupar a pauta de percepção das pessoas, sem repetir o velho e batido tema da corrupção?<p>
+        Ao mesmo tempo que a tecnologia em rede é útil ela não deixa de ser prejudicial. Neste caso, não apenas ao <b>marketing político</b>, mas a nossas relações - sejam afetivas, amorosas, amizades, de cidadania, trabalhistas, etc.<p> 
+        Isso acontece porque, no modo analógico, o tempo das coisas não podia ser “encurtado” como no modo digital. Para chegar a um programa favorito, um veículo de comunicação tinha sua programação, consumiam-se o “bom e o ruim” para chegar ao “clímax”.<p>
+        As mídias digitais permitem selecionar só aquilo que a gente considera “bom”; isso provoca certo distanciamento das informações diferentes, contraditórias, e assim vamos mudando nosso “perfil” de pensamento. Somos educados a viver apenas o gozo como única forma de aceitar o mundo.<p>
+        Há muito que os psicólogos nos chamam atenção para a sociedade mimada em que estamos nos transformando. Não suportamos mais quem não diga o que a gente quer ouvir. Como efeito disso tudo, a amargura e o tédio têm sido nossas companheiras cotidianas.<p>
+        Tudo que está fora da atmosfera “espetacular” e que não atenda ao perfil “on demand” não atrai mais nossa atenção. Mergulhamos nesta sombra em busca de nossa “felicidade” e não refletimos o mundo como algo importante. Há que considerar que um dos motivos é o nosso prazer, algo entendido nesta modernidade como competição e que deve ser hiper midiatizado para nossa “felicidade”.<p>
+        Diferentemente da ideia de que cada pessoa tem a sua percepção da realidade, as redes têm rompido com esta pluralidade e tornado, pelo hiperconsumo, uma percepção única da realidade.
+        O <b>marketing político</b> de ponta não deve esquecer de áreas esquecidas na “educação” moderna, como a sociologia, história, filosofia, psicologia e arte. Quem se atentar para isso tem chance de fazer sucesso, pois vejo muita gente cansada da mesmice.</p>
 
 
-        </style>
-    </head>
-
-    <body>
-            <section class="menu">
-            <div class="logo">
-                <a href="#top"><img src="imagens/logo%20base%20DM_final%20quadrado.png" alt="" title="DM - blog top"></a>
-            </div>
-                <div class="icons">
-                    <a class="btn btn-dark btn-social mx-2" href="#cards"><i class="fas fa-book-open" title="últimos posts"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#materia"><i class="fas fa-text-height" title="texto mais recente"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#pe"><i class="fas fa-coffee" title="fale comigo"></i></a> 
-                    <a class="btn btn-dark btn-social mx-2" href="mailto:didispbr@gmail.com?subject=Contato" title="e-mail"><i class="fas fa-envelope-open-text"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://dimarketingpolitico.github.io/" target="_blank" title="home"><i class="fas fa-house-user"></i></a><p></p>
-                </div>
-        </section>      
-        <!-- imagem principal -->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Blog do Dids</div>
-                 <img class="boton" src="imagens/caricatura%20dids%20boton.png" alt="">
-                <div class="masthead-heading">Prazer em ter você por aqui!</div>
-            </div>
-        </header>
-        <!-- cards -->
-        <div class="clean" ></div>
-        <section class="cards" id="cards" >
-            <div class="row">
-                <div class="card green">
-                    <h2><center>Marketing e mediação</h2>
-                    <p>Neste meu primeiro post vou falar um pouco sobre candidaturas. Elas são, na maioria das vezes, sonhos. Começam no campo pessoal, mas para avançar precisam ter engajamento coletivo. Ninguém é candidato de si mesmo. O postulante a um cargo tem que atentar para três coisas: sua relação com a comunidade, suas virtudes e uma assessoria que lhe garanta condições para que possa agir.</p>
-                    <a href="https://dimarketingpolitico.blogspot.com/2021/05/marketing-politico-comeca-pela-formacao.html" target="_blank" ><i class="fab fa-readme"></i> - continuar leitura</a><p></p>		  
-                    <h6><i>Postado em 27/05/2021</i></h6>
-                </div>
-                <div class="card blue">
-                        <h2><center>Candidato "consumível"</h2>
-                        <p>A sociedade escolhe o que vai comprar pautada por desejos de consumo que nos são despertados pelas mídias. Grosso modo, temos uma mecânica em questão: sucesso ou fracasso, isso aos olhos da alta ou baixa adesão a determinados produtos. A lógica do marketing é criar, desenvolver, produzir, propagandear e vender.</p>
-                        <a href="https://dimarketingpolitico.blogspot.com/2021/07/candidato-consumivel.html" target="_blank" ><i class="fab fa-readme"></i> - continuar leitura</a><p></p>        
-                        <h6><i>Postado em 30/07/2021</i></h6>        
-                </div>
-                <div class="card red">
-                    <h2><center>Candidato?</h2>
-                    <p>Esta questão não deixa de ser intrigante para quem faz consultoria em marketing político, pois parece básica, banal e simples de responder. Mas não é. Ser candidato hoje em dia tornou-se corriqueiro e faz parte de muitas estratégias, inclusive ajudar o partido ou outros candidatos, por exemplo.
-                    Como ninguém é candidato de si mesmo e o voto não chega aos montes nas urnas, muita gente...</p>
-                    <a href="https://dimarketingpolitico.blogspot.com/2021/07/por-que-ser-candidato.html" target="_blank" ><i class="fab fa-readme"></i> - continuar leitura</a><p></p>
-                    <h6><i>Postado em 07/07/2021</i></h6>      
-                </div>
-            </div>
-        </section>
-        <div class="clean" ></div>
-
-        <!-- ultimo post -->
-        <section class="materia" id="materia" >
-                    <h1>A propaganda política</h1>
-		    <div class="corpo">
-                <p>*Por Didi Pasqualini</p>
-                <!-- corpo do texto -->
-
-                <p>Um projeto profissional e competitivo na empreitada de uma candidatura é constituído por 3 fases distintas. A saber: o <b>marketing político</b>, eleitoral e governamental.<p></p>
-                Todos precisam ser muito bem pensados. Lembre-se; os melhores argumentos são os mais poderosos e é preciso arte e ciência para saber apresentá-los ao eleitor.<p></p>
-                É muito comum o político ficar preso à mídia como se ela fosse resolver todos seus problemas, o que na maioria das vezes não acontece. Se faltam projetos, a culpa é do setor de comunicação. Isso tem sido uma cantilena arrastada que muitos “consultores” usam como argumento para vender seu trabalho sem muito esforço.<p></p>
-                <!-- anúncio sou freelas -->
-                <div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-I_3Q-YdsxsE/YTJEZCeoYOI/AAAAAAAALXY/HBzM3kFnAk8bQShjKqSJA8ygm4JgFkIfQCLcBGAsYHQ/s1040/sou%2Bfrilas2.gif" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="400" data-original-height="993" data-original-width="1040" src="https://1.bp.blogspot.com/-I_3Q-YdsxsE/YTJEZCeoYOI/AAAAAAAALXY/HBzM3kFnAk8bQShjKqSJA8ygm4JgFkIfQCLcBGAsYHQ/s400/sou%2Bfrilas2.gif"/></a></div>
-                <!-- continua o texto -->
-                O <b>marketing</b> tem a ver com tempo e posicionamento. Ele deve ser atuante nestas três fases ditas acima, mas com certa distância, pois precisa ser concebido como porta de entrada para projetos e posteriormente ser o seu catalisador junto à administração.<p></p>
-                O que acontece normalmente é que a grande maioria das candidaturas é baseada na propaganda e seu impacto junto ao eleitor. O que é paradoxal, pois ela se apresenta como um remédio que logo adiante não pode ser administrado.<p></p>
-                Isso porque o político tem de entender que não depende apenas dele para realizar a maioria das coisas que promete em campanha. Se tornou padrão exagerar naquilo que não pode ser feito, a buscar soluções viáveis para as localidades. O candidato, na maioria das vezes, se posiciona como aquele que vai ser melhor que seu antecessor e assim, imagina que vai resolver todos os problemas.<p></p>
-                Como é necessário certa dose de exagero, criam-se expectativas e a frustração chega como fatura a ser cobrada. É por conta desta realidade que a administração pública atual nos traz a sensação de que é pior do que a anterior.<p></p>
-                As câmaras são piores, os prefeitos o são e também o presidente.<p></p>
-                O que resta é a propaganda. Quando não se consegue fazer nada, busca-se colocar venda nos olhos da opinião pública com certa carga ideológica. Apelam-se aos sentimentos para convencer as pessoas que a incapacidade tem de ser vista como representação do ideal, daquilo que não se consegue fazer.<p></p>
-                Os atores políticos se viciaram nessa prática, e ela, de certa forma, tem servido para moldar os desejos às massas. Não é à toa que a política está desacreditada aos olhos da maioria das pessoas e como efeito é preciso, cada vez mais, carregar nas tintas ideológicas para passar a sensação de trabalhador, honesto, moderno, empreendedor e por aí vai.<p></p>
-                A propaganda se constitui em um poderoso instrumento de mobilização das massas. Hitler, Pavlov, Lenin, Goebbels, Stalin, entre outros estão aí para nos contar.<p></p>
-
-                <!-- assinatura -->
-                <p><b><left>** O autor é Jornalista, Redator Freelancer e Consultor em Marketing Político.</b></p>
-                <h6><i>Postado em 01/10/2021</i></h6>
-            </div>
-        </section>
-                <div class="clean" ></div>
-                <!-- pé pagina -->
-    <footer class="pe" id="pe">
-                    <div class="laptop"><img src="imagem/desktop.png" alt=""></div>
-                <div class="row">
-                    <div class="contato 1">
-                        <center><a class="btn btn-dark btn-social mx-2" href="#"><i class="fas fa-sms" title="sms"></i></a>
-                        <h2><center>SMS</h2>
-                        <p><a href="sms:+19997094329&body=Hi%2520there%252C%2520I%2527d%2520like%2520to%2520place%2520an%2520order%2520for...">Clique aqui e envie sua mensagem!</a></p>
-                    </div>
-                    <div class="contato 2">
-                        <center><a class="btn btn-dark btn-social mx-2" href="#"><i class="fas fa-sms" title="sms"></i></a>
-                        <h2><center>SMS</h2>
-                        <p>(padrão Android)</p>
-                    </div>
-                    <div class="contato 3">
-                        <center><a class="btn btn-dark btn-social mx-2" href="mailto:didispbr@gmail.com?subject=Contato" title="e-mail"><i class="fas fa-envelope-open-text"></i></a>
-                        <h2><center>E-MAIL</h2>
-                        <p>didispbr@gmail.com</p>
-                    </div>
-                    <div class="contato 4">
-                        <center><a class="btn btn-dark btn-social mx-2" href="#"><i class="fas fa-satellite-dish" title="signal"></i></a>
-                        <h2>Mensageiro Signal</h2>
-                        <p><a href="https://signal.org/pt_BR/download/" target="_blank">Baixe o app aqui</p></a>
-                    </div>
-                </div>
-   </footer>
-    </body>
-
-
+        <!-- assinatura -->
+        <p><b><left>** O autor é Jornalista, Redator Freelancer e Consultor em Marketing Político.</b></p>
+        <h6><i>Postado em 08/10/2021</i></h6>
+      </div>
+    </section>
+    <div class="clean" ></div>
+    <div class="clean" ></div>
+    <!-- cards -->
+    <div class="clean" ></div>
+    <section class="cards" id="ultimas-postagens" >
+      <div class="row">
+        <div class="card green">
+          <h2><center>A propaganda política</h2>
+          <p>Um projeto profissional e competitivo na empreitada de uma candidatura é constituído por 3 fases distintas. A saber: o <b>marketing político</b>, eleitoral e governamental.<p>
+          Todos precisam ser muito bem pensados. Lembre-se; os melhores argumentos são os mais poderosos e é preciso arte e ciência para saber apresentá-los ao eleitor.</p>
+          <a href="https://dimarketingpolitico.blogspot.com/2021/05/marketing-politico-comeca-pela-formacao.html" target="_blank" ><i class="fab fa-readme"></i> - continuar leitura</a><p></p>		  
+          <h6><i>Postado em 01/10/2021</i></h6>
+        </div>
+        <div class="card blue">
+          <h2><center>Candidato "consumível"</h2>
+          <p>A sociedade escolhe o que vai comprar pautada por desejos de consumo que nos são despertados pelas mídias. Grosso modo, temos uma mecânica em questão: sucesso ou fracasso, isso aos olhos da alta ou baixa adesão a determinados produtos. A lógica do marketing é criar, desenvolver, produzir, propagandear e vender.</p>
+          <a href="https://dimarketingpolitico.blogspot.com/2021/07/candidato-consumivel.html" target="_blank" ><i class="fab fa-readme"></i> - continuar leitura</a><p></p>        
+          <h6><i>Postado em 30/07/2021</i></h6>        
+        </div>
+        <div class="card red">
+          <h2><center>Candidato?</h2>
+          <p>Esta questão não deixa de ser intrigante para quem faz consultoria em marketing político, pois parece básica, banal e simples de responder. Mas não é. Ser candidato hoje em dia tornou-se corriqueiro e faz parte de muitas estratégias, inclusive ajudar o partido ou outros candidatos, por exemplo.
+          Como ninguém é candidato de si mesmo e o voto não chega aos montes nas urnas, muita gente...</p>
+          <a href="https://dimarketingpolitico.blogspot.com/2021/07/por-que-ser-candidato.html" target="_blank" ><i class="fab fa-readme"></i> - continuar leitura</a><p></p>
+          <h6><i>Postado em 07/07/2021</i></h6>      
+        </div>
+      </div>
+    </section>
+    <div class="clean" ></div>
+    <div class="clean" ></div>
+    <!-- pé pagina -->
+    <footer class="pe" id="contato">
+      <h2>Contato</h2>
+      <div class="laptop"><img src="imagem/desktop.png" alt=""></div>
+      <div class="row">
+        <div class="contato 1">
+          <center><a class="btn btn-dark btn-social mx-2" href="sms:+19997094329&body=Hi%2520there%252C%2520I%2527d%2520like%2520to%2520place%2520an%2520order%2520for..."><i class="fas fa-sms" title="sms"></i></a>
+          <h2><center>SMS</h2>
+          <p>Clique aqui e envie sua mensagem!</a></p>
+        </div>
+        <div class="contato 2">
+          <center><a class="btn btn-dark btn-social mx-2" href="#"><i class="fas fa-sms" title="sms"></i></a>
+          <h2><center>SMS</h2>
+          <p>(padrão Android)</p>
+        </div>
+        <div class="contato 3">
+          <center><a class="btn btn-dark btn-social mx-2" href="mailto:didispbr@gmail.com?subject=Contato" title="e-mail"><i class="fas fa-envelope-open-text"></i></a>
+          <h2><center>E-MAIL</h2>
+          <p>didispbr@gmail.com</p>
+        </div>
+        <div class="contato 4">
+          <center><a class="btn btn-dark btn-social mx-2" href="#"><i class="fas fa-satellite-dish" title="signal"></i></a>
+          <h2>Mensageiro Signal</h2>
+          <p><a href="https://signal.org/pt_BR/#signal" target="_blank">Baixe o app aqui</p></a>
+        </div>
+      </div>
+    </footer>
+    <div class="clean" ></div>
+    <div class="final"><h6>Copyright © Didi Marketing - 2021 - Desenvolvido por DM - Com.</h6></div>
+  </body>
 </html>
