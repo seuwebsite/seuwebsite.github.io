@@ -1,614 +1,693 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>seção</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- nome gutenberg-->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- legenda da foto-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-
-    <style type="text/css">
-      @media (min-width: 320px) {
-      .logo {
-        float: left;
-        padding-left: 4%;
-        padding-top: 100px;
-        position: fixed;
-      }
-      .logo img {
-        width: 55px;
-        height: auto;
-      }
-      .icons {
-        padding-top: 4%;
-        padding-left: 10px;
-      }
-      header.masthead {
-        padding-top: 10.5rem;
-        padding-bottom: 6rem;
-        text-align: center;
-        color: #fff;
-        background-image: url("imagens/header-bg.jpg");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: center center;
-        background-size: cover;
-        }
-        header.masthead .masthead-subheading {
-        font-size: 3.5rem;
-        line-height: 1.5rem;
-        text-align: center;
-        margin-bottom: 25px;
-        font-family: 'Pacifico', cursive;
-        transform: rotate(-10deg);
-        color: #fff;
-        text-shadow: black 0.1em 0.1em 0.2em;
-      }
-      .clean {
-        padding-top: 20px;
-      }
-      .comp p {
-        text-align: center;
-        font-size: 12;
-        background-color: rgba(100, 102, 102, 0.4);
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .filipeta {
-        background-color: #64a19d;
-        width: 250px;;
-        margin-left: auto;
-        margin-right: auto;
-        color: #64a19d;
-      }
-      .filipeta1 {
-        background-color: #64a19d;
-        width: 250px;
-        margin-left: auto;
-        margin-right: auto;
-        color: #64a19d;
-        height: 50px;
-        padding-top: 40px;
-      }
-      .laptop img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 290px;
-      }
-      header.masthead .masthead-heading {
-        font-size: 2.25rem;
-        font-weight: 700;
-        line-height: 3.25rem;
-        margin-bottom: 2rem;
-        padding-top: 3rem;
-        padding-bottom: 6rem;
-        text-shadow: black 0.1em 0.1em 0.2em;
-        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      }
-      .materia {
-        background-color: rgba(173, 166, 149, 0.3);
-        padding-bottom: 20px;
-        padding-top: 20px;
-      }
-      .materia h1 {
-        text-align:center;
-        color: #736e64; 
-      }
-      .materia .corpo {
-        text-align: left;
-        padding-left: 5%;
-        padding-right: 5%;
-        color: rgba(100, 102, 102, 0.9);
-        font-size: 14px;
-      }
-      .legenda p {
-        text-align: center;
-        color: rgba(100, 102, 102, 0.9);
-        margin-left: 2%;
-        margin-right: 2%;
-        font-family: 'Courgette', cursive;
-      }
-      .legenda a {
-        color: chocolate;
-        font-family: 'Pacifico', cursive;
-      }
-      .prazer {
-        color: rgb(240, 241, 241);
-        font-size: 30px;
-        font-family: 'Pacifico', cursive;
-        text-shadow: black 0.1em 0.1em 0.2em;
-        transform: rotate(-8deg);
-      }
-      .final {
-        background-color: #64a19d;
-        height: 40px;
-        padding-top: 10px;
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+            <meta name="description" content="pachwork | Magda" />
+            <meta name="author" content="Didi" />
+            <meta name="Atliê 4 Estações" content="Bolsas, máscaras, pachwork, brindes, enfeites.">
+            <meta name="keywords" content="4 estações, pachwork, loja de artesanato online, bolsa feita à mão, atelier de costura com Janome, acessorios de mulher.">
+            <meta name="description" content="4 estacoes | Pachwork by Magda | Site criado para a mulher que é 4 estacoes.">
         
-      }
-      .final h6 {
-        background-color: rgba(143, 115, 64, 0.2);
-        width: 300px;
-        font-size: 10px;
-        text-align: center;
-        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.5);
-        margin-left: auto;
-        margin-right: auto;
-        color: #fff;
-      }
-      .DM img {
-        width: 80%;
-        align-items: center;
-        
-      }
-      }
-      @media (min-width: 768px) {
-      .clean {
-        padding-top: 20px;
-      }
-      .comp p {
-        text-align: center;
-        font-size: 16;
-        background-color: rgba(100, 102, 102, 0.4);
-        width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .laptop img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 400px;
-      }
-      header.masthead .masthead-heading {
-        font-size: 2.25rem;
-        font-weight: 700;
-        line-height: 3.25rem;
-        margin-bottom: 2rem;
-        padding-top: 3rem;
-        padding-bottom: 6rem;
-        text-shadow: black 0.1em 0.1em 0.2em;
-        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      }
-      header.masthead .masthead-subheading {
-        font-size: 4.5rem;
-        line-height: 1.5rem;
-        margin-bottom: 25px;
-        font-family: 'Pacifico', cursive;
-        transform: rotate(-10deg);
-        color: #fff;
-        text-shadow: black 0.1em 0.1em 0.2em;
-      }
-      header.masthead {
-        padding-top: 10.5rem;
-        padding-bottom: 6rem;
-        text-align: center;
-        color: #fff;
-        background-image: url("imagens/header-bg.jpg");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: center center;
-        background-size: cover;
-      }
-      .logo {
-        float: left;
-        padding-left: 10%;
-        padding-top: 2%;
-        position: fixed;
-      }
-      .logo img {
-        width: 80px;
-        height: auto;
-      }
-      .icons {
-        padding-top: 3%;
-        padding-left: 50%;
-      }
-      .materia {
-        background-color: rgba(173, 166, 149, 0.3);
-        padding-bottom: 15px;
-        padding-top: 15px;
-      }
-      .materia h1 {
-        text-align:center; 
-      }
-      .materia .corpo {
-        text-align: left;
-        padding-left: 10%;
-        padding-right: 10%;
-        color: rgba(100, 102, 102, 0.9);
-        font-size: 16px;
-      }
-      .legenda p {
-        text-align: center;
-        color: rgba(100, 102, 102, 0.9);
-        margin-left: 2%;
-        margin-right: 2%;
-        font-family: 'Courgette', cursive;
-      }
-      .legenda a {
-        color: chocolate;
-        font-family: 'Pacifico', cursive;
-      }
-      .prazer {
-        color: rgb(240, 241, 241);
-        font-size: 50px;
-        font-family: 'Pacifico', cursive;
-        text-shadow: black 0.1em 0.1em 0.2em;
-        transform: rotate(-8deg);
-      }
-      .final {
-        background-color: #64a19d;
-        height: 60px;
-        padding-top: 20px;
-        
-      }
-      .final h6 {
-        background-color: rgba(143, 115, 64, 0.2);
-        width: 600px;
-        font-size: 16px;
-        text-align: center;
-        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.5);
-        margin-left: auto;
-        margin-right: auto;
-        color: #fff;
-      }
-      }
-      @media (min-width: 1200px) {
-      .clean {
-        padding-top: 50px;
-      }
-      .comp p {
-        text-align: center;
-        font-size: 16;
-        background-color: rgba(100, 102, 102, 0.4);
-        width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .filipeta {
-        background-color: #64a19d;
-        width: 20%;
-        margin-left: auto;
-        margin-right: auto;
-        color: #64a19d;
-      }
-      .filipeta1 {
-        background-color: #64a19d;
-        width: 20%;
-        margin-left: auto;
-        margin-right: auto;
-        color: #64a19d;
-        height: 30px;
-        padding-top: 5%;
-      }
-      .laptop img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 500px;
+            <title>4 estações | Ateliê Magda</title>
+            <link rel="icon" type="image/x-icon" href="img/logo 4 estacoes.ico" />
+            <!-- CSS only -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+            rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+            crossorigin="anonymous">
+            <!-- JavaScript Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+            crossorigin="anonymous"></script>
+            <!--icones-->
+            <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>            
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+            <!--fontes-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+            <!--css-->                        
+            <link href="css/styles.css" rel="stylesheet" />
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-CF6BHFP2XB"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CF6BHFP2XB');
+            </script>
+        <!--folha de estilo-->
+        <style type="text/css">
+            * body {
+                font-family: 'Merriweather Sans', sans-serif;
+            }
+            /* paleta de cores */
+            .primary-color {
+                color: rgb(31, 30, 30);
+            }
+            .secondary-color {
+                color:rgb(99, 97, 97)
+            }
+            .bg-primary-color {
+                background-color: rgba(121, 185, 245, 0.3);
+            }
+            .bg-secondary-color {
+                background-color: rgba(121, 185, 245, 0.1);
+            }
+            .bg-third-color {
+                background-color: rgb(195, 224, 250);
+            }
+             /* nav */
+             #navbar {
+                border-bottom: 3px solid rgb(146, 144, 144);
+            }
+            #navbar a:hover {
+                color: rgb(0, 0, 0);
+                font-weight: 900;
+            }
+            .navbar-brand {
+                display: flex;
+            
+            }
+            .navbar-brand img {
+                width: 60px;
+            }
+            #navbar-items .navbar-nav {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            #navbar-items .nav-items {
+                margin: 0 1em;
+            }
+            /* banners */
+            #banners {
+                margin-bottom: 4em;
+                
+            }
+            #banners .card {
+                padding: 2em 0.3em;
+                border-radius: 0;
+                margin-bottom: 1em;
+                }
+            #banners i {
+                font-size: 5em;
+            }
+            #banners .card-title {
+                margin-bottom: 1.5em;
+            }
+            #banners .btn {
+                margin-top: 1.5em;
+                padding: 0.6em 1.2em;
+            }
+            @media(min-width: 769px) {
+                #banners {
+                    margin-top: -6em;
+                }
+            }
+            .container {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            #pe {
+                text-align: center;
+                padding-bottom: 10px;
+                padding-top: 20px;
+            }
+            /* flip card */
+            .flip-container {
+                width: 300px;
+                height: 400px;
+                perspective: 1000px;
+            }
+            .row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .flipper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+            }
 
-      }
-      header.masthead {
-        padding-top: 10.5rem;
-        padding-bottom: 6rem;
-        text-align: center;
-        color: #fff;
-        background-image: url("imagens/header-bg.jpg");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: center center;
-        background-size: cover;
-      }
-      header.masthead .masthead-subheading {
-        font-size: 4.5rem;
-        line-height: 1.5rem;
-        margin-bottom: 25px;
-      font-family: 'Pacifico', cursive;
-      transform: rotate(-10deg);
-      color: #fff;
-      text-shadow: black 0.1em 0.1em 0.2em;
-      }
-      header.masthead .masthead-heading {
-        font-size: 2.25rem;
-        font-weight: 700;
-        line-height: 3.25rem;
-        margin-bottom: 2rem;
-        padding-top: 3rem;
-        padding-bottom: 6rem;
-        text-shadow: black 0.1em 0.1em 0.2em;
-        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      }
-      .logo {
-        float: left;
-        padding-left: 15%;
-        padding-top: 2%;
-        position: fixed;
-      }
-      .logo img {
-        width: 80px;
-        height: auto;
-      }
-      .icons {
-        padding-top: 3%;
-        padding-left: 70%;
-      }
-      .materia {
-        background-color: rgba(173, 166, 149, 0.1);
-        padding-bottom: 30px;
-        padding-top: 30px;
-      }
-      .materia h1 {
-        text-align:center; 
-      }
-      .materia .corpo {
-        text-align: left;
-        padding-left: 20%;
-        padding-right: 20%;
-        color: rgba(100, 102, 102, 0.9);
-        font-size: 18px;
-      }
-      .legenda p {
-        text-align: center;
-        color: rgba(100, 102, 102, 0.9);
-        margin-left: 2%;
-        margin-right: 2%;
-        font-family: 'Courgette', cursive;
-      }
-      .legenda a {
-        color: chocolate;
-        font-family: 'Pacifico', cursive;
-      }
-      .prazer {
-        color: rgb(240, 241, 241);
-        font-size: 50px;
-        font-family: 'Pacifico', cursive;
-        text-shadow: black 0.1em 0.1em 0.2em;
-        transform: rotate(-8deg);
-      }
-      }
-      .cards {
-        align-items: center;
-        padding-top: 40px;
-      }
-      .row {
-        justify-content: center;
-        align-items: center;
-      }
-      .card {
-        border-radius: 5px;
-        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-        padding: 30px;
-        margin: 20px;
-        width: 400px;
-        height: 420px;
-        transition: all 0.3s ease-out;
-        background-color: rgba(143, 115, 64, 0.2);
-      }
-      .card:hover {
-        transform: translateX(-15px);
-        cursor: pointer;
-      }
-      .card p {
-        color: rgba(100, 102, 102, 0.9);
-        font-size: 16px;
-      }
-      .card h2 {
-        color: #736e64;
-      }
-      .image {
-        float: right;
-        max-width: 64px;
-        max-height: 64px;
-      }
-      .blue {
-        border-left: 3px solid #ffa348;
-      }
-      .green {
-        border-left: 3px solid #3bb54a;
-      }
-      .red {
-        border-left: 3px solid #b3404a;
-      }
-      .texto {
-        background-color: rgba(100, 161, 155, 0.5);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 10px;
-        }
-      .boton {
-      padding-top: 30px;
-      }
-      .card h6 {
-      color: rgba(100, 102, 102, 0.9);
-        font-size: 12px;
-        text-align: right;
-      }
-      .card h6 {
-        color: rgba(100, 102, 102, 0.9);
-        font-size: 12px;
-        text-align: right;
-      }
-      .corpo h6 {
-        color: rgba(100, 102, 102, 0.9);
-        font-size: 12px;
-        text-align: right; 
-      }
-      .contato {
-        border-radius: 5px;
-        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-        padding: 20px;
-        margin: 20px;
-        width: 200px;
-        height: 160px;
-        transition: all 0.3s ease-out;
-        background-color: rgba(143, 115, 64, 0.2);
-      }
-      .contato p {
-        font-size: 12px;
-        text-align: center;
-        padding-bottom: 20px;
-        color: #736e64;
-      }
-      .contato h2 {
-        font-size: 14px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color: #736e64;
-        text-align: center;
+            .flip-container:hover .flipper {
+                transform: rotateY(180deg);
+            }
 
-      }
-      .contato:hover {
-        background-color: rgba(0. 0. 0. 0.4);
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-      }
-      .pe h2 {
-        text-align: center;
-        color: rgba(100, 102, 102, 0.9);
-        background-color: rgba(143, 115, 64, 0.2);
-        width: 160px;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.5);
-      }
-      .pe img {
-        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-      }
+            .front, .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+            }
+            .back {
+                transform: rotateY(180deg);
+            }
+            .clean {
+                height: 25em;
+            }
+            /* slider */
+            #slider {
+                margin-top: 8em;
+                margin-bottom: 1em;
+            }
+            #slider .carousel-caption {
+                bottom: 1em;
+            }
+            .carousel-indicators .active {
+                background-color: black;
+            }
+            #slider .carousel-caption h5 {
+                font-family: 'Oleo Script Swash Caps', cursive;
+                font-size: 1em;
+                text-shadow: black 1px 1px;
+            }
+            #slider .visually {
+                font-size: 0.8em;
+                text-shadow: black 1px 1px;
+                color: black;
+                margin: 1px;
+                margin-top: 3em;
+            }
+            .carousel-indicators {
+                bottom: -1em;
+            }
+            #compras {
+                margin-top: 100px;
+                background-color: rgba(121, 185, 245, 0.3);
+                padding: 10px 10px 10px 10px;
+                align-items: center;
+                border-bottom: 1px solid rgb(0, 0, 0);
+            }
+            #compras p {
+                margin-top: 3.5em;
+                font-size: 10px;
+            }
+            #compras h1 {
+                font-size: 22px;
+            }
+            #pe .btn {
+                font-size: 14px;
+            }
 
-    </style>
-
-  </head>
-  <body id="top">
-    <!-- testeira -->
-    <section class="menu">
-      <div class="logo">
-        <a href="#top"><img src="imagens/logo%20base%20DM_final%20quadrado.png" alt="" title="DM - blog top"></a>
-      </div>
-      <div class="icons">
-        <a class="btn btn-dark btn-social mx-2" href="#ultimas-postagens"><i class="fas fa-book-open" title="últimos posts"></i></a>
-        <a class="btn btn-dark btn-social mx-2" href="#nova-postagem"><i class="fas fa-text-height" title="texto mais recente"></i></a>
-        <a class="btn btn-dark btn-social mx-2" href="#contato"><i class="fas fa-coffee" title="fale comigo"></i></a> 
-        <a class="btn btn-dark btn-social mx-2" href="mailto:didispbr@gmail.com?subject=Contato" title="e-mail"><i class="fas fa-envelope-open-text"></i></a>
-        <a class="btn btn-dark btn-social mx-2" href="https://dimarketingpolitico.github.io/" target="_blank" title="home"><i class="fas fa-house-user"></i></a><p></p>
-      </div>
-      
-    </section>
-    <!-- imagem principal -->
-    <header class="masthead">
-      <div class="container">
-        <div class="masthead-subheading">Blog do Dids</div>
-        <img class="boton" src="imagens/caricatura%20dids%20boton.png" alt="">
-        <div class="prazer">Prazer em ter você por aqui!</div>
-      </div>
-    </header>
-    <div class="legenda"><p>A maioria dos jornalistas até o início do século XX era tipógrafo. Compunham seus textos à mão. Com 15 anos comecei a trabalhar em Jornal que produzia seus textos com linotipos. Os títulos ainda eram feitos à mão, um a um. A gente imprimia as provas no prelo manual para as correções e posteriormente o acabamento das pesadas páginas de chumbo. Também vivi as eras do past-up e o fotolito. Mais ágil, o processo possibilitou melhor acabamento e design ao material impresso. Hoje,  na editoração eletrônica, todo material é organizado em uma página no computador, que vai direto para a impressora, processo denominado computer-to-plate. A foto acima é uma homenagem ao famoso <a href="https://pt.wikipedia.org/wiki/Johannes_Gutenberg" style="text-decoration:none" target="_blank"/>Johannes Gutenberg</a>, que inventou os tipos móveis, bem parecidos aos da foto acima, sua criação possibilitou a gente chegar até aqui, na Web.</p></div>
-    <div class="clean" ></div>
-    <div class="clean" ></div>
-    <!-- ultimo post -->
-    <section class="materia" id="nova-postagem" >
-      <h1>Como fazer marketing em tempos de crise</h1>
-      <div class="corpo">
-        <p>*Por Didi Pasqualini</p>
-        <!-- corpo do texto -->
-
-        <p>Se tudo está mudando, por que o <b>marketing</b> deve ser o mesmo? Vivemos uma época de grandes mudanças, pautadas pela automação, gamificação, desafios ecológicos e, por que não, o <b>marketing político</b>?<p>
-        Há certo grau de desigualdade nas candidaturas. Há sempre grupos que têm mais dinheiro, são mais bem preparados ou posicionados, gozam de alguns privilégios - como gênero ou raça, têm outros atributos que, logo de partida, dão a esta camada da sociedade certa vantagem competitiva que devemos levar em consideração, o que, na maioria das vezes, os estrategistas não fazem.<p>
-        <!-- anúncio sou freelas -->
-        <div class="DM"><img src="https://1.bp.blogspot.com/-I_3Q-YdsxsE/YTJEZCeoYOI/AAAAAAAALXY/HBzM3kFnAk8bQShjKqSJA8ygm4JgFkIfQCLcBGAsYHQ/s1040/sou%2Bfrilas2.gif"></div>
-        <!-- continua o texto -->
-        Por mais estratégico que seja, ao olhar para os meios digitais como “ambientes” em que as massas “se encontram”, restam poucas dúvidas sobre como os algoritmos estão mudando a percepção de realidade do consumidor. A questão a ser debatida é: como resgatar o eleitor das bolhas individualistas de comodidade em que ele vive e mostrar que precisa ter uma compreensão de mundo diferente da virtualidade? Ou ainda, como a política pode sair do seu local específico de fala e ocupar a pauta de percepção das pessoas, sem repetir o velho e batido tema da corrupção?<p>
-        Ao mesmo tempo que a tecnologia em rede é útil ela não deixa de ser prejudicial. Neste caso, não apenas ao <b>marketing político</b>, mas a nossas relações - sejam afetivas, amorosas, amizades, de cidadania, trabalhistas, etc.<p> 
-        Isso acontece porque, no modo analógico, o tempo das coisas não podia ser “encurtado” como no modo digital. Para chegar a um programa favorito, um veículo de comunicação tinha sua programação, consumiam-se o “bom e o ruim” para chegar ao “clímax”.<p>
-        As mídias digitais permitem selecionar só aquilo que a gente considera “bom”; isso provoca certo distanciamento das informações diferentes, contraditórias, e assim vamos mudando nosso “perfil” de pensamento. Somos educados a viver apenas o gozo como única forma de aceitar o mundo.<p>
-        Há muito que os psicólogos nos chamam atenção para a sociedade mimada em que estamos nos transformando. Não suportamos mais quem não diga o que a gente quer ouvir. Como efeito disso tudo, a amargura e o tédio têm sido nossas companheiras cotidianas.<p>
-        Tudo que está fora da atmosfera “espetacular” e que não atenda ao perfil “on demand” não atrai mais nossa atenção. Mergulhamos nesta sombra em busca de nossa “felicidade” e não refletimos o mundo como algo importante. Há que considerar que um dos motivos é o nosso prazer, algo entendido nesta modernidade como competição e que deve ser hiper midiatizado para nossa “felicidade”.<p>
-        Diferentemente da ideia de que cada pessoa tem a sua percepção da realidade, as redes têm rompido com esta pluralidade e tornado, pelo hiperconsumo, uma percepção única da realidade.
-        O <b>marketing político</b> de ponta não deve esquecer de áreas esquecidas na “educação” moderna, como a sociologia, história, filosofia, psicologia e arte. Quem se atentar para isso tem chance de fazer sucesso, pois vejo muita gente cansada da mesmice.</p>
-
-
-        <!-- assinatura -->
-        <p><b><left>** O autor é Jornalista, Redator Freelancer e Consultor em Marketing Político.</b></p>
-        <h6><i>Postado em 08/10/2021</i></h6>
-      </div>
-    </section>
-    <div class="clean" ></div>
-    <div class="clean" ></div>
-    <!-- cards -->
-    <div class="clean" ></div>
-    <section class="cards" id="ultimas-postagens" >
-      <div class="row">
-        <div class="card green">
-          <h2><center>A propaganda política</h2>
-          <p>Um projeto profissional e competitivo na empreitada de uma candidatura é constituído por 3 fases distintas. A saber: o <b>marketing político</b>, eleitoral e governamental.<p>
-          Todos precisam ser muito bem pensados. Lembre-se; os melhores argumentos são os mais poderosos e é preciso arte e ciência para saber apresentá-los ao eleitor.</p>
-          <a href="https://dimarketingpolitico.blogspot.com/2021/05/marketing-politico-comeca-pela-formacao.html" target="_blank" ><i class="fab fa-readme"></i> - continuar leitura</a><p></p>		  
-          <h6><i>Postado em 01/10/2021</i></h6>
+            @media(min-width: 769px) {
+                #slider .carousel-caption {
+                    bottom: 15em;
+                }
+                #slider .carousel-caption h5 {
+                    font-family: 'Oleo Script Swash Caps', cursive;
+                    font-size: 4em;
+                    text-shadow: black 3px 3px;
+                }
+                #slider .visually {
+                    font-size: 1.8em;
+                    text-shadow: black 2px 2px;
+                    color: rgb(255, 255, 255);
+                    margin: 1px;
+                    margin-top: -3em;
+                }
+                .carousel-indicators {
+                    bottom: 5em;
+                }
+                #compras {
+                    flex-direction: column;
+                }
+                #compras p {
+                margin-top: 2em;
+                font-size: 20px;
+                border-left: 2px solid #000;
+                }
+                #compras h1 {
+                    font-size: 42px;
+                }
+                #pe .btn {
+                font-size: 24px;
+                }
+                #slider .colunas {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            
+            
+        </style>
+    </head>
+    <body id="art-top">
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg fixed-top bg-third-color" id="navbar">
+            <div class="container py3">
+            <a class="navbar-brand" href="#art-top"><img src="img/4 estacoes_logo 4 estações.png" width="50px" alt=""></a>
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbar-items" 
+                aria-controls="navbar-items" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link primary-color" href="#banners"><i class="bi bi-flower2"></i> - 4 Estações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link primary-color" href="#sobre"><i class="bi bi-shop"></i> - Ateliê</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link primary-color" href="#compras"><i class="bi bi-cart3"></i> - Adquirir meus produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link primary-color" href="#pe"> <i class="bi bi-envelope-open"></i> - Contato</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!--sliders-->
+        <div class="container" id="slider-container">
+            <div class="carousel slide" id="slider" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button
+                    type="button" 
+                    class="active" 
+                    data-bs-target="slider" 
+                    data-bs-slide-to="0" 
+                    aria-current="true" 
+                    aria-label="slide 1">
+                    </button>
+                    <button
+                    type="button" 
+                    data-bs-target="slider" 
+                    data-bs-slide-to="1" 
+                    aria-label="slide 2">
+                    </button>
+                    <button
+                    type="button" 
+                    data-bs-target="slider" 
+                    data-bs-slide-to="2" 
+                    aria-label="slide 3">
+                    </button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/imagem-principal-1.png" alt="" class="d-block w-100" />
+                        <div class="carousel-caption">
+                            <h5>Neste Natal</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagem-principal-2.png" alt="" class="d-block w-100" />
+                        <div class="carousel-caption">
+                            <h5>Presentes 4 Estações</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagem-principal-3.png" alt="" class="d-block w-100" />
+                        <div class="carousel-caption">
+                            <h5>Caem muito bem!</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" 
+                    type="button" data-bs-target="#slider" 
+                    data-bs-slide="prev">
+                    <span class="visually hidden">|<</span>
+                </button>
+                    <button class="carousel-control-next" 
+                    type="button" data-bs-target="#slider" 
+                    data-bs-slide="next">
+                    <span class="visually hidden">>|</span>
+                </button>
+            </div>      
+            <!--banners-->
+            <div class="col-12 col-md-10 offset-md-1" id="banners">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card text-center">
+                            <i class="bi bi-people-fill"></i>
+                            <div class="card-body">
+                                <h5 class="card-title primary-color">Linhagem familiar</h5>
+                                <p class="card-text secondary-color">Linhas, tecidos, agulhas, máquinas manuais ou automáticas me acompanham desde sempre. 
+                                    Minha avó, minha mãe e eu seguimos por este caminho, que é o de transformar "matéria prima" em ideias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card text-center">
+                            <i class="bi bi-patch-question"></i>
+                            <div class="card-body">
+                                <h5 class="card-title primary-color">Por que Artesanato?</h5>
+                                <p class="card-text secondary-color">Feitos à mão, são peças únicas, delicadas e exclusivas.
+                                    Mais do que personalizar e ser a extensão da influência de cada um - o artesão e sua arte 
+                                    - ajudam a criar uma identidade exclusiva para você em cada peça.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card text-center">
+                            <i class="bi bi-box primary-color"></i>
+                            <div class="card-body">
+                                <h5 class="card-title primary-color">Objetos de valor</h5>
+                                <p class="card-text secondary-color">Atribuir valor a objetos feitos por máquinas é 
+                                    diferente a do artista. O artesanato não deixa de ser uma fantasia que nos mergulha 
+                                    em uma felicidade constante. Venha ser feliz comigo nas 4 estações!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
         </div>
-        <div class="card blue">
-          <h2><center>Candidato "consumível"</h2>
-          <p>A sociedade escolhe o que vai comprar pautada por desejos de consumo que nos são despertados pelas mídias. Grosso modo, temos uma mecânica em questão: sucesso ou fracasso, isso aos olhos da alta ou baixa adesão a determinados produtos. A lógica do marketing é criar, desenvolver, produzir, propagandear e vender.</p>
-          <a href="https://dimarketingpolitico.blogspot.com/2021/07/candidato-consumivel.html" target="_blank" ><i class="fab fa-readme"></i> - continuar leitura</a><p></p>        
-          <h6><i>Postado em 30/07/2021</i></h6>        
+        <!--atelie-->
+        <section class="ident" id="sobre">
+            <div class="container bg-secondary-color">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        
+                        <img src="img/imagem principal lettering.png" width="100%" alt="">
+                        <hr class="divider my-4" />
+                        <h1 class="sonhe primary-color text-center">Sonhe alto menina, <p>que a arte a gente faz</p></h1>
+                        <p class="text-muted mb-5 secondary-color">Penso que a cada estação temos um olhar diferente para com a 
+                            vida. Toda pessoa, imagino, tem alguma identificação com as estações do ano, seja ela qual for. 
+                            Todo este simbolismo nos cobre de amor, esperança, renovação e compartilhamentos. É com esta 
+                            esperança que recebo você em meu espaço virtual e desejo que nossa relação possa transcender o 
+                            espírito comercial e se tornar na mágica relação humana com a vida, exatamente como são as estações 
+                            do ano, que nos renovam sempre. Sejam Bem-vindas e Bem-vindos!!!
+                        <div class="assina"><img src="img/4 estacoes_assina magda.png" 
+                            width="35%" height="35%" alt="4 estacoes"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card animado -->
+        <div class="container" id="compras">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <h1 class="comprar primary-color text-center"><i class="bi bi-cart-check-fill"></i>  Vamos às compras</h1>
+                </div>
+                <div class="col-4">
+                    <p class="text-muted mb-5 secondary-color text-center">Clique no verso dos cards para adquirir 
+                    o produto desejado ou envie um novo projeto</p>
+                </div>
+            </div>
         </div>
-        <div class="card red">
-          <h2><center>Candidato?</h2>
-          <p>Esta questão não deixa de ser intrigante para quem faz consultoria em marketing político, pois parece básica, banal e simples de responder. Mas não é. Ser candidato hoje em dia tornou-se corriqueiro e faz parte de muitas estratégias, inclusive ajudar o partido ou outros candidatos, por exemplo.
-          Como ninguém é candidato de si mesmo e o voto não chega aos montes nas urnas, muita gente...</p>
-          <a href="https://dimarketingpolitico.blogspot.com/2021/07/por-que-ser-candidato.html" target="_blank" ><i class="fab fa-readme"></i> - continuar leitura</a><p></p>
-          <h6><i>Postado em 07/07/2021</i></h6>      
-        </div>
-      </div>
-    </section>
-    <div class="clean" ></div>
-    <div class="clean" ></div>
-    <!-- pé pagina -->
-    <footer class="pe" id="contato">
-      <h2>Contato</h2>
-      <div class="laptop"><img src="imagens/desktop.png" width="100%" alt=""></div>
-      <div class="row">
-        <div class="contato 1">
-          <center><a class="btn btn-dark btn-social mx-2" href="sms:+19997094329&body=Hi%2520there%252C%2520I%2527d%2520like%2520to%2520place%2520an%2520order%2520for..."><i class="fas fa-sms" title="sms"></i></a>
-          <h2><center>SMS</h2>
-          <p>Clique aqui e envie sua mensagem!</a></p>
-        </div>
-        <div class="contato 2">
-          <center><a class="btn btn-dark btn-social mx-2" href="#"><i class="fas fa-sms" title="sms"></i></a>
-          <h2><center>SMS</h2>
-          <p>(padrão Android)</p>
-        </div>
-        <div class="contato 3">
-          <center><a class="btn btn-dark btn-social mx-2" href="mailto:didispbr@gmail.com?subject=Contato" title="e-mail"><i class="fas fa-envelope-open-text"></i></a>
-          <h2><center>E-MAIL</h2>
-          <p>didispbr@gmail.com</p>
-        </div>
-        <div class="contato 4">
-          <center><a class="btn btn-dark btn-social mx-2" href="#"><i class="fas fa-satellite-dish" title="signal"></i></a>
-          <h2>Mensageiro Signal</h2>
-          <p><a href="https://signal.org/pt_BR/#signal" target="_blank">Baixe o app aqui</p></a>
-        </div>
-      </div>
-    </footer>
-    <div class="clean" ></div>
-    <div class="clean" ></div>
-    <div class="final"><h6>Copyright © Didi Marketing - 2021 - Desenvolvido por DM - Com.</h6></div>
-    <div class="clean" ></div>
-  </body>
+        <section class="container animado" id="flip" >
+            <div class="row">
+                <div class="col-12 col-md-4">    
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-1.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <a href="https://api.whatsapp.com/send?phone=5519996992333&text=Magda%2C%20tenho%20interesse%20na%20Bolsa%20da%20Minie">
+                                <img src="img/card-1-A.png" width="300px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-2.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-3.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-4.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-5.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-6.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-7.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-8.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-9.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-10.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-11.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-12.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-13.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-14.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-15.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-16.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-17.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-18.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-19.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-20.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-21.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-22.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/card-23.png" width="300px" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/card-1-A.png" width="300px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--contato-->
+        <footer class="fim bg-third-color" id="pe">
+            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/Ateliê-Quatro-Estações-by-Magda-Pasqualini-360714467768467/" target="_blank"><i class="fab fa-facebook" title="twitter" ></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/atelie4_estacoes/" target="_blank"><i class="fab fa-instagram" title="Blog do dids" ></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="https://wa.me/5519 996992333" target="_blank"><i class="fab fa-whatsapp" title="linkedin" ></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="sms:+19996992333&body=Hi%2520there%252C%2520I%2527d%2520like%2520to%2520place%2520an%2520order%2520for..."><i class="fas fa-sms" title="sms"></i></a>
+            <a class="btn btn-dark btn-social mx-2" href="mailto:magdapasrio@gmail.com?subject=Contato" title="e-mail"><i class="fas fa-envelope-open-text"></i></a><p></p>
+            <div><h6>Copyright © Ateliê 4 Estações - 2021 - Desenvolvido por DM - Com.</h6></div>
+        </footer>
+    </body>
 </html>
