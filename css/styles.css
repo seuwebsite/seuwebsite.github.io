@@ -1,5 +1,5 @@
 @charset "UTF-8";
-  /*font family*/
+/*font family*/
   body {
     font-family: 'Changa', sans-serif;
 }
@@ -20,8 +20,11 @@
     background-color: #a6ff7d;
 }
 /*top*/
+.clean {
+    margin-top: 10px;
+}
 .topo {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .topo h5 {
     text-align: left;
@@ -39,7 +42,7 @@
     background-color: #005e00;
 }
 .botao {
-    margin-top: 60px;
+    margin-top: 1px;
 }
 /*CONTATO*/
 .contato p {
@@ -55,7 +58,7 @@
 }
  /* nav */
 #navbar {
-    margin-top: 10px;
+    margin-top: -330px;
 }
 #navbar a:hover {
     color: rgb(22, 22, 21);
@@ -89,9 +92,9 @@
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    padding-top: 10rem;
-    padding-bottom: 2rem;
-    margin-top: 1em;
+    padding-top: 50px;
+    margin-top: 295px;
+
 }
 .imagem-principal p {
     text-align: center;
@@ -244,7 +247,7 @@ padding: 10px;
     background-color: #005e00;
 }
 .botao {
-    margin-top: 60px;
+    margin-top: 10px;
 }
 /*CONTATO*/
 .contato p {
@@ -259,10 +262,16 @@ padding: 10px;
     margin-top: -2em;
 }
 }
+/*imagem principal*/
+.imagem-principal {
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    margin-top: 285px;
+}
 @media (min-width: 1024px) {
 /* nav */
 #navbar {
-    margin-top: 130px;
+    margin-top: -1px;
 }
 /*top*/
 .topo {
@@ -298,7 +307,7 @@ padding: 10px;
 .imagem-principal {
     padding-top: 18rem;
     padding-bottom: 1rem;
-    margin-top: 3.5em;
+    margin-top: .7em;
 }
 .imagem-principal p {
     text-align: center;
