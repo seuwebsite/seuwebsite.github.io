@@ -1,327 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Web site do dids</title>
+        <title>Site teste - dids</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
         <!--fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
-        <!--css boots-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--css do projeto-->
+        <link rel="stylesheet" href="styles.css">
         <!--icones-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-        <!--css-->
-        <link rel="stylesheet" href="css/styles.css">
-        <!--javaScript-->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        <!--icones-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-
-
-        <style type="text/css">
-            /*font family*/
-            body {
-                font-family: 'Changa', sans-serif;
-            }
-            /*paleta de cores*/
-            .primary-color {
-                color: #005e00;
-            }
-            .secondary-color {
-                color:#499950;
-            }
-            .third-color {
-                color: #fff;
-            }
-            .bg-primary-color {
-                background-color: #d9fcdc
-            }
-            .bg-secondary-color {
-                background-color: #a6ff7d;
-            }
-            /*top*/
-            .top {
-                margin-top: 70px;
-            }
-            .top h5 {
-                text-align: left;
-            }
-            .icon {
-                font-size: 30px;
-                text-shadow: black 0.1em 0.1em 0.2em
-            }
-            .alguma p {
-                margin-top: -10px;
-                font-size: 12px;
-                text-align: left;
-            }
-            .btn {
-                max-width: 120px;
-                margin-left: 10px;
-            }
-            /*CONTATO*/
-            .contato p {
-                margin-top: 0.5em;
-                text-decoration: none;
-            }
-            .contato img:hover {
-                -webkit-transform: scale(1.1);
-                -moz-transform: scale(1.1);
-                -o-transform: scale(1.1);
-                -ms-transform: scale(1.1);
-                transform: scale(1.1);
-            }
-             /* nav */
-            #navbar {
-                margin-top: -1px;
-            }
-            #navbar a:hover {
-                color: rgb(22, 22, 21);
-                font-weight: 900;
-            }
-            #navbar .active {
-                border-bottom: 1px solid rgb(0, 0, 0);
-            }
-            #navbar-items .navbar-nav {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                background-color: #005e00;
-            }
-            #navbar-items .nav-items {
-                margin: 0 1em;
-            }
-            .navbar-toggler {
-                color: #fff;
-                background-color: #005e00;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            /*imagem principal*/
-            .imagem-principal {
-                background-image: url(https://cdn.pixabay.com/photo/2016/11/19/11/11/hands-1838658_960_720.jpg);
-                background-repeat: no-repeat;
-                background-attachment: scroll;
-                background-position: center center;
-                background-size: cover;
-                padding-top: 10rem;
-                padding-bottom: 2rem;
-                margin-top: 1em;
-            }
-            .imagem-principal p {
-                text-align: center;
-                font-size: 16px;
-                color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-                padding: 15px;
-            }
-            .container-flex h1 {
-                font-weight: 900;
-                color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-                font-size: 30px;
-                margin-top: 130px;
-            }
-            /* banners */
-            #banners {
-                margin-top: 1em;
-            }
-            #banners .card {
-                padding: 1em 0.2em;
-                border-radius: 0;
-                margin-bottom: 1em;
-                background-color: #172c02
-            }
-                
-            #banners i {
-                font-size: 3em;
-            }
-            #banners .card-title {
-                margin-bottom: 1.5em;
-            }
-            #banners p {
-                font-size: 12px;
-            }
-            /*background-2*/
-            .bg-2 {
-                background-image: url(https://cdn.pixabay.com/photo/2019/04/25/05/27/brazil-4153988_960_720.jpg);
-                background-repeat: no-repeat;
-                background-attachment: scroll;
-                background-position: center center;
-                background-size: cover;
-                padding-top: 2em;
-                padding-bottom: 2em;
-                margin-top: 1em;
-            }
-            /*secao 03*/
-            #secao-03 h1, h3 {
-                text-align: center;
-                margin-top: 1em;
-            }
-            /*secao 04*/
-            #secao-04 h1, h3 {
-                text-align: center;
-                margin-top: 1em;
-            }
-            /*secao 05*/
-            #secao-05 h2, p {
-                text-align: center;
-                margin-top: 1em;
-            }
-            /*secao 06*/
-            #secao-06 h2, h3, p {
-                text-align: center;
-                margin-top: 1em;
-            }
-             /* slider */
-             #slider {
-                margin-top: 1.5em;
-                margin-bottom: 1em;
-            }
-            #slider .carousel-caption {
-                bottom: 1em;
-            }
-            #slider .carousel-caption h5 {
-                font-family: 'Oleo Script Swash Caps', cursive;
-                font-size: 2em;
-                text-shadow: black 1px 1px;
-            }
-            #slider .visually {
-                font-size: 0.8em;
-                text-shadow: black 1px 1px;
-                color: black;
-                margin: 1px;
-                margin-top: -12em;
-                background-color: rgb(155, 152, 152);
-                border-radius: 55px;
-                padding: 10px;
-            }
-            .numbertext p {
-                font-size: 14px;
-                margin-top: 50px;
-                background-color: #d9fcdc;
-                padding-top: 30px;
-                padding-bottom: 40px;
-                padding-left: 3px;
-            }
-            .texto-slider p {
-                margin-top: 10px;
-            }
-            #secao-07 {
-            background-color: darkgrey;
-            padding: 10px;
-            }
-            /*rodape*/
-            .final {
-                padding: 15px;
-                margin-top: 20px;
-            }
-            #secao-07 {
-                padding-top: 20px;
-                text-align: center;
-                background-image: url(https://cdn.pixabay.com/photo/2019/08/05/17/16/sunflower-4386505_960_720.jpg);
-            }
-             /*break-point*/
-            /*top*/
-            @media (min-width: 768px) {
-            .btn {
-                max-width: 60px;
-                margin-left: -20px;
-            }
-            /* banners */
-            #banners {
-                margin-top: -2em;
-            }
-            }
-            @media (min-width: 1024px) {
-            /* nav */
-            #navbar {
-                margin-top: 3.3em;
-            }
-            /*top*/
-            .top {
-                margin-top: 10px;
-            }
-            .btn {
-                max-width: 120px;
-                margin-left: -18px;
-            }
-            /*imagem principal*/
-            .imagem-principal {
-            padding-top: 18rem;
-                padding-bottom: 1rem;
-                margin-top: 3.2em;
-            }
-            .imagem-principal p {
-                text-align: center;
-                font-size: 26px;
-                color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-                padding-top: -10px;
-            }
-            .container-flex h1 {
-                font-weight: 900;
-                color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-                font-size: 40px;
-            }
-            /* banners */
-            #banners {
-                margin-top: -3em;
-            }
-            }
-            @media (min-width: 1440px) {
-            /*imagem principal*/
-            .imagem-principal {
-                padding-top: 10rem;
-                padding-bottom: 35rem;
-                margin-top: 3.2em;
-            }
-            /*imagem principal*/
-            .imagem-principal {
-                padding-top: 28rem;
-                padding-bottom: 10rem;
-                margin-top: 3.2em;
-            }
-            .imagem-principal p {
-                text-align: center;
-                font-size: 30px;
-                color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-            }
-            .container-flex h1 {
-                font-weight: 900;
-                color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-                font-size: 60px;
-            }
-            /*banners*/
-            #banners i {
-                font-size: 5em;
-            }
-            #banners p {
-                font-size: 16px;
-            }
-            /*background-2*/
-            .bg-2 {
-                padding-bottom: 4em;
-                padding-top: 3em;
-            }
-            /*slider*/
-            .numbertext p {
-                font-size: 20px;
-                padding: 20px;
-                margin-top: 10px;
-                background-color: #d9fcdc;
-            }
-            /*CONTATO*/
-            .contato {
-                margin-left: 63px;
-            }
-            }
-        </style>
+        
     </head>
-    <body class="top">
-        <div class="container top">
+    <body class="top"></body>
+        <!--Botão antes de começar-->
+        <div class="container mt-3">
+            <button type="button" class="btn btn-success botao" data-bs-toggle="popover" title="Bem-vindo ao Site" data-bs-content="Agradeço a sua visita. Desde já saiba que tudo que fiz foi pensando no bem coletivo. Na vida, nada se leva, a não ser o amor ao próximo. Espero por seu feedback. Boa navegação!">
+                Antes de começar, clique aqui
+            </button>
+        </div>
+        <div class="container topo">
             <div class="row">
                 <div class="col-sm-4">
                     <h6 class="primary-color">NOME DO CABOCO</h6>
@@ -381,16 +85,16 @@
                     <a class="nav-link third-color" href="#top"><i class="bi bi-house-fill"></i> - Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link third-color" href="#marketing"><i class="bi bi-kanban-fill"></i> - Projetos</a>
+                    <a class="nav-link third-color" href="#secao-03"><i class="bi bi-kanban-fill"></i> - Seção 1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link third-color" href="https://www.behance.net/didspas" target="_blank"><i class="bi bi-behance"></i> - Projetos</a>
+                    <a class="nav-link third-color" href="#secao-04"><i class="bi bi-behance"></i> - Seção 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link third-color" href="https://dimarketingpolitico.blogspot.com/" target="_blank" ><i class="bi bi-file-earmark-font"></i> - Projetos</a>
+                    <a class="nav-link third-color" href="#secao-05" ><i class="bi bi-file-earmark-font"></i> - Seção 3</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link third-color" href="https://curriculo-didi.github.io" target="_blank"><i class="bi bi-card-text"></i> - Projetos</a>
+                    <a class="nav-link third-color" href="#secao-06"><i class="bi bi-card-text"></i> - Seção 4</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link third-color" href="#secao-07"> <i class="bi bi-envelope-open"></i> - Contato</a>
@@ -545,28 +249,27 @@
             </div>
         </div>
         <!--secao-06-->
-        <div class="publicações" id="secao-06">
-            <h2 class="primary-color">voluptatibus delectus distinctio nostrum</h2>
-        </div>
-        <div class="container" id="publica">
-            <div class="row">
-                <div class="col-12 col-sm-4">
-                    <img src="https://cdn.pixabay.com/photo/2018/07/15/20/43/onion-3540502_960_720.jpg" width="100%" alt="">
-                    <h3 class="primary-color">Facere nobis</h3>
-                    <p class="secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta velit quaerat laborum dignissimos harum nostrum facere nobis eligendi repellendus, quod cumque laudantium, consectetur quia ex iusto, in quae optio.
-                    </p>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <img src="https://cdn.pixabay.com/photo/2014/11/30/15/49/carrot-551661_960_720.jpg" width="100%" alt="">
-                    <h3 class="primary-color">Facere nobis</h3>
-                    <p class="secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta velit quaerat laborum dignissimos harum nostrum facere nobis eligendi repellendus, quod cumque laudantium, consectetur quia ex iusto, in quae optio.
-                    </p>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <img src="https://cdn.pixabay.com/photo/2019/04/17/17/50/lettuce-seedling-4134906_960_720.jpg" width="100%" alt="">
-                    <h3 class="primary-color">Facere nobis</h3>
-                    <p class="secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta velit quaerat laborum dignissimos harum nostrum facere nobis eligendi repellendus, quod cumque laudantium, consectetur quia ex iusto, in quae optio.
-                    </p>
+        <div class="container-flex bg-primary-color" id="secao-06">
+            <div class="container horta">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2 class="primary-color">voluptatibus delectus distinctio nostrum</h2>
+                        <img class="onion" src="https://cdn.pixabay.com/photo/2018/07/15/20/43/onion-3540502_960_720.jpg" alt="">
+                        <p class="secondary-color onion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias corporis error aperiam eos quam, dolorum dolore et sapiente nulla suscipit placeat ipsam similique id nostrum excepturi, reiciendis eligendi atque reprehenderit!</p>
+                    </div>
+                    <div class="col-sm-1 line">
+
+                    </div>
+                    <div class="col-sm-3">
+                        <h3 class="primary-color">Lorem ipsum dolor sit amet</h3>
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/15/49/carrot-551661_960_720.jpg" width="100%" alt="">
+                        <p class="secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque culpa, nisi voluptatum dolorem fugiat illum ea exercitationem, blanditiis saepe fugit repudiandae pariatur maxime sint nobis adipisci corporis deserunt iste delectus?</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3 class="primary-color">Lorem ipsum dolor sit amet</h3>
+                        <img src="https://cdn.pixabay.com/photo/2019/04/17/17/50/lettuce-seedling-4134906_960_720.jpg" width="100%" alt="">
+                        <p class="secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque culpa, nisi voluptatum dolorem fugiat illum ea exercitationem, blanditiis saepe fugit repudiandae pariatur maxime sint nobis adipisci corporis deserunt iste delectus?</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -581,6 +284,12 @@
             </div>
         </footer>
         <!--rodape-->
-        <div class="final primary-color text-center bg-primary-color"><h6>Copyright © Didi Marketing Político - 2021<p></p>Desenvolvido por DM - Com. Todos os direitos reservados</h6></div>      
+        <div class="final primary-color text-center bg-primary-color"><h6>Copyright © Didi Marketing Político - 2021<p></p>Desenvolvido por DM - Com. Todos os direitos reservados</h6></div>   
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>   
     </body>
 </html>
