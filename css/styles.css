@@ -19,6 +19,13 @@
 .bg-secondary-color {
     background-color: #a6ff7d;
 }
+/*Botão home*/
+#seta {
+    margin-left: 25px;
+    margin-top: 47px;
+    position: fixed;
+    font-size: 30px;
+}
 /*top*/
 .clean {
     margin-top: 10px;
@@ -92,8 +99,8 @@
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    padding-top: 50px;
-    margin-top: 295px;
+    padding-top: 30px;
+    margin-top: 325px;
 
 }
 .imagem-principal p {
@@ -227,6 +234,14 @@ padding: 10px;
 
 /*break-point*/
 @media (min-width: 768px) {
+/*Botão home*/
+#seta {
+    margin-left: -2px;
+    margin-top: 107px;
+    position: fixed;
+    font-size: 30px;
+    color:#005e00;
+}
 /*top*/
 .topo {
     margin-top: 20px;
@@ -331,6 +346,11 @@ padding: 10px;
     margin-left: -1px;
 }
 /*imagem principal*/
+.imagem-principal {
+    padding-top: 460px;
+    padding-bottom: 1rem;
+    margin-top: .7em;
+}
 .imagem-principal p {
     text-align: center;
     font-size: 30px;
