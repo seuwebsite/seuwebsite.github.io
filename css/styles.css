@@ -19,53 +19,9 @@
 .bg-secondary-color {
     background-color: #a6ff7d;
 }
-/*Botão home*/
-#seta {
-    margin-left: 25px;
-    margin-top: 47px;
-    position: fixed;
-    font-size: 30px;
-}
-/*top*/
-.clean {
-    margin-top: 10px;
-}
-.topo {
-    margin-top: 50px;
-}
-.topo h5 {
-    text-align: left;
-}
-.icon {
-    font-size: 30px;
-    text-shadow: black 0.1em 0.1em 0.2em
-}
-.alguma p {
-    margin-top: -10px;
-    font-size: 12px;
-    text-align: left;
-}
-.btn {
-    background-color: #005e00;
-}
-.botao {
-    margin-top: 1px;
-}
-/*CONTATO*/
-.contato p {
-    margin-top: 0.5em;
-    text-decoration: none;
-}
-.contato img:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
- /* nav */
+/* nav */
 #navbar {
-    margin-top: -330px;
+    margin-top: -440px;
 }
 #navbar a:hover {
     color: rgb(22, 22, 21);
@@ -92,310 +48,146 @@
 .nav-item {
     margin-left: 15px;
 }
-/*imagem principal*/
-.imagem-principal {
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/19/11/11/hands-1838658_960_720.jpg);
+.masthead {
+    background-image: url("img/img-principal-1.png");
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
+    background-position: inherit;
     background-size: cover;
-    padding-top: 30px;
-    margin-top: 325px;
-
-}
-.imagem-principal p {
-    text-align: center;
-    font-size: 16px;
-    color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-    padding: 15px;
-}
-.container-flex h1 {
-    font-weight: 900;
-    color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-    font-size: 30px;
-    margin-top: 130px;
-}
-/* banners */
-#banners {
-    margin-top: 1em;
-}
-#banners .card {
-    padding: 1em 0.2em;
-    border-radius: 0;
-    margin-bottom: 1em;
-    background-color: #172c02
-}
-    
-#banners i {
-    font-size: 3em;
-}
-#banners .card-title {
-    margin-bottom: 1.5em;
-}
-#banners p {
-    font-size: 12px;
-}
-/*background-2*/
-.bg-2 {
-    background-image: url(https://cdn.pixabay.com/photo/2019/04/25/05/27/brazil-4153988_960_720.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-top: 1em;
-}
-/*secao 03*/
-#secao-03 h1, h3 {
-    text-align: center;
-    margin-top: 1em;
-}
-/*secao 04*/
-#secao-04 h1, h3 {
-    text-align: center;
-    margin-top: 1em;
-}
-/*secao 05*/
-#secao-05 h2, p {
-    text-align: center;
-    margin-top: 1em;
-}
-/*secao 06*/
-#secao-06 h2, h3, p {
-    text-align: center;
-    margin-top: 1em;
-}
-#secao-01, #secao-02, #secao-03, #secao-04, #secao-05 {
-    margin-top: 10em;
-}
- /* slider */
- #slider {
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-}
-#slider .carousel-caption {
-    bottom: 1em;
-}
-#slider .carousel-caption h5 {
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-size: 2em;
-    text-shadow: black 1px 1px;
-}
-#slider .visually {
-    font-size: 0.8em;
-    text-shadow: black 1px 1px;
-    color: black;
-    margin: 1px;
-    margin-top: -12em;
-    background-color: rgb(155, 152, 152);
-    border-radius: 55px;
-    padding: 10px;
-}
-.numbertext p {
-    font-size: 14px;
-    margin-top: 50px;
-    background-color: #d9fcdc;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 3px;
-}
-.texto-slider p {
-    margin-top: 10px;
-}
-#secao-07 {
-background-color: darkgrey;
-padding: 10px;
-}
-/*rodape*/
-.final {
-    padding: 15px;
-    margin-top: 10em;
-}
-#secao-07 {
-    padding-top: 20px;
-    text-align: center;
-    background-image: url(https://cdn.pixabay.com/photo/2019/08/05/17/16/sunflower-4386505_960_720.jpg);
-    margin-top: 10em;
-}
-/*horta*/
-.horta p {
-    text-align: left;
-}
-.onion {
+    padding-top: 5rem;
+    padding-bottom: 26rem;
     width: 100%;
 }
-#secao-06 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 10em;
-    
+.nome {
+    margin-top: 90px;
+    text-align: center;
 }
-
-/*break-point*/
-@media (min-width: 768px) {
-/*Botão home*/
-#seta {
-    margin-left: -2px;
-    margin-top: 107px;
-    position: fixed;
-    font-size: 30px;
-    color:#005e00;
-}
-/*top*/
-.topo {
-    margin-top: 20px;
-}
-.topo h5 {
-    text-align: left;
-}
-.icon {
-    font-size: 30px;
-    text-shadow: black 0.1em 0.1em 0.2em
-}
-.alguma p {
+.nome p {
     margin-top: -10px;
-    font-size: 12px;
-    text-align: left;
 }
-.btn {
-    background-color: #005e00;
+.masthead .nome {
+    font-weight: 900;
+    margin-top: 200px;
 }
-.botao {
-    margin-top: 10px;
+.footer0 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 90px;
+    padding-left: 5px;
+    font-size: 18px;
 }
-/*CONTATO*/
-.contato p {
-    margin-top: 0.5em;
-    text-decoration: none;
+.footer1 {
+    text-align: center;
+    margin-top: 80px;
 }
-.contato img {
-    margin-left: -30px;
+.footer1 h6 {
+    font-size: 14px;
 }
-/* banners */
-#banners {
-    margin-top: -2em;
+@media (min-width: 375px) {
+    .masthead {
+        padding-top: 5rem;
+        padding-bottom: 44rem;
+        height: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+@media (min-width: 425px) {
+    .masthead {
+        padding-top: 5rem;
+        padding-bottom: 38rem;
+        width: 100%;
+    }
 }
-/*imagem principal*/
-.imagem-principal {
-    padding-top: 8rem;
-    padding-bottom: 1rem;
-    margin-top: 285px;
-}
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 /* nav */
 #navbar {
-    margin-top: -1px;
+    margin-top: -940px;
 }
-/*top*/
-.topo {
-    margin-top: 20px;
+    .masthead {
+        padding-top: 5rem;
+        padding-bottom: 68rem;
+        width: 100%;
+    }
+    .nome {
+        margin-top: 290px;
+        text-align: center;
+    }
+    .nome p {
+        margin-top: -10px;
+    }
+    .footer0 {
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 190px;
+        padding-left: 5px;
+        font-size: 28px;
+    }
+    .footer1 {
+        text-align: center;
+        margin-top: 240px;
+    }
 }
-.topo h5 {
-    text-align: left;
-}
-.icon {
-    font-size: 30px;
-    text-shadow: black 0.1em 0.1em 0.2em
-}
-.alguma p {
-    margin-top: -10px;
-    font-size: 12px;
-    text-align: left;
-}
-.btn {
-    background-color: #005e00;
-}
-.botao {
-    margin-top: 10px;
-}
-/*CONTATO*/
-.contato p {
-    margin-top: 0.5em;
-    text-decoration: none;
-}
-.contato img {
-    margin-left: 1px;
-}
-/*imagem principal*/
-.imagem-principal {
-    padding-top: 18rem;
-    padding-bottom: 1rem;
-    margin-top: .7em;
-}
-.imagem-principal p {
-    text-align: center;
-    font-size: 26px;
-    color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-    padding-top: -10px;
-}
-.container-flex h1 {
-    font-weight: 900;
-    color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-    font-size: 40px;
-}
-/* banners */
-#banners {
-    margin-top: -3em;
-}
-}
-@media (min-width: 1440px) {
-/*top*/
-.contato img {
-    margin-left: -1px;
-}
-/*imagem principal*/
-.imagem-principal {
-    padding-top: 460px;
-    padding-bottom: 1rem;
-    margin-top: .7em;
-}
-.imagem-principal p {
-    text-align: center;
-    font-size: 30px;
-    color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-}
-.container-flex h1 {
-    font-weight: 900;
-    color: #ffffff; text-shadow: black 0.1em 0.1em 0.2em;
-    font-size: 60px;
-}
-/*banners*/
-#banners i {
-    font-size: 5em;
-}
-#banners p {
-    font-size: 16px;
-}
-/*background-2*/
-.bg-2 {
-    padding-bottom: 4em;
-    padding-top: 3em;
-}
-/*slider*/
-.numbertext p {
-    font-size: 20px;
-    padding: 20px;
-    margin-top: 10px;
-    background-color: #d9fcdc;
-}
-/*CONTATO*/
-.contato {
-    margin-left: 63px;
-}
-.line {
-    border-left: 4px solid rgb(252, 248, 248);
-    height: 400px;
-    margin-top: 4em;
-    margin-right: auto;
-    margin-left: auto;
-}
-.onion {
-    width: 80%;
-    margin-left: 25px;
-}
-.onion p {
-    width: 80%;
-}
+@media (min-width: 1024px) {
+    /* nav */
+    #navbar {
+        margin-top: -1200px;
+    }
+        .masthead {
+            padding-top: 5rem;
+            padding-bottom: 68rem;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        .nome {
+            margin-top: 490px;
+            text-align: center;
+        }
+        .nome p {
+            margin-top: -10px;
+        }
+        .footer0 {
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top: 190px;
+            padding-left: 5px;
+            font-size: 28px;
+        }
+        .footer1 {
+            text-align: center;
+            margin-top: 290px;
+        }
+    }
+@media (min-width: 1400px) {
+     /* nav */
+     #navbar {
+        margin-top: -1680px;
+    }
+        .masthead {
+            padding-top: 5rem;
+            padding-bottom: 98rem;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        .nome {
+            margin-top: 490px;
+            text-align: center;
+        }
+        .nome p {
+            margin-top: -10px;
+        }
+        .footer0 {
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top: 190px;
+            padding-left: 5px;
+            font-size: 28px;
+        }
+        .footer1 {
+            text-align: center;
+            margin-top: 760px;
+        }
 }
