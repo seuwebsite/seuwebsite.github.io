@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/*font family*/
+  body {
+    font-family: 'Changa', sans-serif;
+}
+/*paleta de cores*/
+.primary-color {
+    color: #42733c;
+}
+.secondary-color {
+    color:#5e6920;
+}
+.third-color {
+    color: #fff;
+}
+.bg-primary-color {
+    background-color: rgba(1, 83, 8, 0.2);
+}
+.bg-secondary-color {
+    background-color: #a6ff7d;
+}
+ /* nav */
+#navbar {
+    position: relative;
+    bottom: 560px;
+}
+#navbar a:hover {
+    color: rgb(22, 22, 21);
+    font-weight: 900;
+}
+#navbar .active {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+#navbar-items .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #42733c;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.60);
+}
+#navbar-items .nav-items {
+    margin: 0 1em;
+}
+.navbar-toggler {
+    color: #fff;
+    background-color: #005e00;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-item {
+    margin-left: 15px;
+}
+.background-img {
+    background-image: url(../img/img-principal.webp);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    position: relative;
+    background-position: center;
+    
+}
+.nome h1, p {
+    bottom: 460px;
+    position: relative;
+    text-align: center;
+    padding-right: 10px;
+}
+.nome p {
+    font-size: 14px;
+}
+.contato {
+    position: relative;
+    bottom: 320px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 13px;
+    padding-right: 10px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.final {
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+    padding-right: 15px;
+}
+.final h6 {
+    font-size: 10px;
+    line-height: 0.1em;
+}
+@media (min-width: 1024px) {
+ /* nav */
+ #navbar {
+    position: relative;
+    bottom: 540px;
+}
+.contato {
+    font-size: 24px;
+    letter-spacing: 13px;
+}
+.final h6 {
+    font-size: 14px;
+    line-height: 0.1em;
+}
+.nome h1, p {
+    bottom: 420px;
+}
+}
+@media (min-width: 1440px) {
+#navbar-items .navbar-nav {
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.nome h1, p {
+        bottom: 420px;
+    }
+}
