@@ -31,9 +31,14 @@
             #fala-efeito img {
                 margin-top: 20px;
             }
-            #fala-efeito h5 {
+            #fala-efeito h4 {
                 text-align: center;
-                padding: 50px;
+            }
+            .fala {
+                margin-top: 30px;
+            }
+            .fala h4 {
+                text-align: center;
             }
             #Depoimentos {
                 margin-top: 10px;
@@ -53,29 +58,24 @@
                 border-bottom: 3px solid rgb(100, 98, 98);;
             }
             .identidade {
-                font-size: 12px;
+                font-size: 16px;
                 font-weight: 700;
-            }
-              .seta {
-                padding-top: 25px;
-                font-weight: 900;
-                padding-left: 10px;
-                margin-left: 40px;
+                text-align: center;
             }
             @media (min-width: 1024px) {
             #depoimento-1 {
                 padding-top: 18px;
             }
-            .seta {
-                padding-top: 25px;
-                font-weight: 900;
-                padding-left: 10px;
-                margin-left: 10px;
-            }
             }
             @media (min-width: 1440px){
                 #fala-efeito img {
                 margin-top: -40px;
+            }
+            .fala h4 {
+                text-align: right;
+            }
+            .fala {
+                margin-top: 15px;
             }
             }
         </style>
@@ -83,23 +83,24 @@
     <body>
         <!--fala efeito-->
         <div class="container-fluid">
-            
-            <div class="row">
-                <div class="col-12 col-lg-12" id="fala-efeito">
-                    <div class="row">
-                        <div class="col-2">
-                            <img class="mx-auto rounded-circle" src="imagens/caricatura dids corte.jpg" width="100%" alt="marketing político" />
-                        </div>
-                        <div class="col-10">
-                            <h5>O Marketing Político não é uma máquina de construir candidaturas de sucesso, mas uma poderosa ferramenta que busca satisfazer as necessidades do eleitor. Quando o político entende este conceito está a um passo de sua eleição.</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-12" id="fala-efeito">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="mx-auto rounded-circle" src="imagens/caricatura dids corte.jpg" width="100%" alt="marketing político" />
+                            </div>
+                            <div class="col-10">
+                                <h4>O Marketing Político não é uma máquina de construir candidaturas de sucesso, mas uma poderosa ferramenta que busca satisfazer as necessidades do eleitor. Quando o político entende este conceito está a um passo de sua eleição.</h4>
+                            </div>
                         </div>
                     </div>
+                </div>
             </div>
-            
         </div>
         <!--Depoimentos-->
         <div class="container-fluid">
-            
+            <div class="container">
                 <div class="row">
                     <div class="col-12" id="Depoimentos">
                         <h2 class="text-uppercase primary-color"><b>Depoimentos </b>- Alguns assessorados</h2>
@@ -107,79 +108,83 @@
                     </div>
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-12 col-lg-4" id="depoimento-1">
+                            <div class="col-12 col-lg-6" id="depoimento-1">
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-4">
                                         <img class="mx-auto rounded-circle" src="imagens/1.jpg" width="100%" alt="" />
-                                        <p class="seta">>>>></p>
+                                        <p class="identidade">Aldo Demarchi, ex-deputado por 6 mandatos, vereador e prefeito</p>
                                     </div>
-                                    <div class="col-9 fala">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</p>
-                                        <p class="identidade">Fulano de tal, ex-vereador e prefeito</p>
+                                    <div class="col-8 fala">
+                                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</h4>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4" id="depoimento-2">
+                            <div class="col-12 col-lg-6" id="depoimento-2">
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-4">
                                         <img class="mx-auto rounded-circle" src="imagens/2.jpg" width="100%" alt="" />
-                                        </div>
-                                    <div class="col-9 fala">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</p>
-                                        <p class="identidade">Fulano de tal, ex-vereador e prefeito</p>
-                                        </div>
+                                        <p class="identidade">Nevoeiro Júnior, ex-prefeito por 3 e ex-vereador por 2 mandatos</p>
+                                    </div>
+                                    <div class="col-8 fala">
+                                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4" id="depoimento-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img class="mx-auto rounded-circle" src="imagens/3.jpg" width="100%" alt="" />
-                                        </div>
-                                    <div class="col-9 fala">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</p>
-                                        <p class="identidade">Fulano de tal, ex-vereador e prefeito</p>
-                                        </div>
-                                </div>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-12 col-lg-4" id="depoimento-4">
+                            <div class="col-12 col-lg-6" id="depoimento-4">
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-4">
                                         <img class="mx-auto rounded-circle" src="imagens/1.jpg" width="100%" alt="" />
-                                        </div>
-                                    <div class="col-9 fala">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</p>
                                         <p class="identidade">Fulano de tal, ex-vereador e prefeito</p>
-                                        </div>
+                                    </div>
+                                    <div class="col-8 fala">
+                                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4" id="depoimento-5">
+                            <div class="col-12 col-lg-6" id="depoimento-5">
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-4">
                                         <img class="mx-auto rounded-circle" src="imagens/2.jpg" width="100%" alt="" />
-                                        </div>
-                                    <div class="col-9 fala">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</p>
                                         <p class="identidade">Fulano de tal, ex-vereador e prefeito</p>
-                                        </div>
+                                    </div>
+                                    <div class="col-8 fala">
+                                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4" id="depoimento-6">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img class="mx-auto rounded-circle" src="imagens/3.jpg" width="100%" alt="" />
-                                        </div>
-                                    <div class="col-9 fala">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</p>
-                                        <p class="identidade">Fulano de tal, ex-vereador e prefeito</p>
-                                        </div>
-                                </div>
                         </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 col-lg-6" id="depoimento-4">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img class="mx-auto rounded-circle" src="imagens/1.jpg" width="100%" alt="" />
+                                            <p class="identidade">Fulano de tal, ex-vereador e prefeito</p>
+                                        </div>
+                                        <div class="col-8 fala">
+                                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6" id="depoimento-5">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img class="mx-auto rounded-circle" src="imagens/2.jpg" width="100%" alt="" />
+                                            <p class="identidade">Fulano de tal, ex-vereador e prefeito</p>
+                                        </div>
+                                        <div class="col-8 fala">
+                                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla dignissimos. Ullam fugiat modi unde optio corporis.</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
-            
+            </div>
         </div>
         
     </body>
