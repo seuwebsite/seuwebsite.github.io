@@ -36,45 +36,10 @@ Body {
 #duvidas {
     text-align: center;
 }
-.fa-user-friends {
-    font-size: 70px;
-    color: rgb(95, 92, 92);
-    }
 .fiador p {
     text-align: center;
 }
-.fa-user-friends:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    background-color: rgba(98, 137, 85, 0.8);
-  }
-  .fa-comment-dollar{
-    font-size: 70px;
-    color: rgb(95, 92, 92);
-    }
-.fa-comment-dollar:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    background-color: rgba(98, 137, 85, 0.8);
-  }
-  .fa-file-signature{
-    font-size: 70px;
-    color: rgb(95, 92, 92);
-    }
-.fa-file-signature:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    background-color: rgba(98, 137, 85, 0.8);
-  }
+
   /*nav*/
   #menuToggle {
     display: block;
