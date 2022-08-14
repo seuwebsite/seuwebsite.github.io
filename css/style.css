@@ -518,7 +518,8 @@ margin-top: 20px;
   background-color: #1d6217;
 }
 #tv {
-  margin-left: 5%;
+  margin-left: 4%;
+  margin-top: 10px;
 }
 #play-list p {
   font-size: 20px;
@@ -527,13 +528,17 @@ margin-top: 20px;
   font-family: 'Kanit', sans-serif;
   margin-top: -5px;
   text-align: left;
+  border-bottom: 3px solid rgb(70, 68, 68);
 }
 #play-list {
-  margin-top: -40px;
+  margin-top: 10px;
 }
 #play-list img {
   margin-top: 40px;
 }
 .grupo {
   margin-top: -40px;
+}
+#botao-play {
+  margin-top: -37px;
 }
