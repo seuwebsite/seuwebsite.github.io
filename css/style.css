@@ -30,6 +30,7 @@ body {
 }
 #navbar button {
     color: #fff;
+    font-size: 50px;
 }
 #navbar a:hover {
     color: rgb(0, 0, 0);
@@ -83,14 +84,16 @@ body {
   font-size: 16px;
   font-weight: 600;
   color: #fafcf9;
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Pacifico', cursive;
   line-height: 15px;
   text-align: center;
   text-decoration: none;
   padding-top: 15px;
 }
 .menu-quadros {
-  margin-left: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 #menu-secundario {
   background-color: #39310c;
@@ -130,6 +133,9 @@ font-family: 'Pacifico', cursive;
 #circulos {
 margin-top: 50px;
 margin-left: 18px;
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 #card {
   margin-top: 50px;
@@ -194,6 +200,9 @@ margin-left: 18px;
   font-family: 'Kanit', sans-serif;
   margin-top: 20px;
   text-align: center;
+}
+#partida {
+  margin-top: 50px;
 }
 #quem {
   margin-top: 50px;
@@ -499,11 +508,16 @@ margin-top: 20px;
     }
 }
 @media (min-width:1440px) {
-    #navbar {
-        margin-top: 20px;
+  #navbar {
+      margin-top: 20px;
     }
     #icons {
-        margin-top: 12px;
-      }
+      margin-top: 12px;
+  }
+  #menu-secundario {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
