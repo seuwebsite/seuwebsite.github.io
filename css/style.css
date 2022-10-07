@@ -26,17 +26,13 @@ body {
 /*background*/
 
 /* nav */
-#navbar img {
-    width: 60px;
-}
 #navbar {
     display: flex;
-
 }
 #navbar h4 {
   color: #fff;
   background-color: #39310c;
-  padding: 15px;
+  padding: 5px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   font-weight: 700;
@@ -45,8 +41,9 @@ body {
     color: white;
     font-size: 35px;
     font-weight: 700;
-    margin-top: -350px;
+    margin-top: -10px;
     margin-left: -10px;
+    margin-bottom: -15px;
 }
 #navbar a:hover {
     color: rgb(0, 0, 0);
@@ -65,65 +62,37 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: -120px;
+    margin-top: 10px;
     line-height: 1px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     line-height: 10px;
     font-size: 18px;
     font-weight: 700;
-    background-color: rgb(240, 248, 255, 0.9);
 }
 #navbar-items .nav-items {
     margin: 0 1em;
 }
+#header {
+    background-color: #230037;
+}
 /*queries*/
 @media (min-width: 375px) {
-    #navbar button {
-    margin-top: -400px;
-    margin-left: -7px;
-    }
-    #navbar-items .navbar-nav {
-        margin-top: -160px;
-    }
+
     }
 @media (min-width: 425px) {
-    #navbar button {
-        margin-top: -470px;
-        margin-left: -2px;
-        }
-        #navbar-items .navbar-nav {
-            margin-top: -200px;
-        }
+ 
     }
 @media (min-width: 768px) {
-    #navbar button {
-        margin-top: -860px;
-        margin-left: 5px;
-        font-size: 45px;
-        }
-        #navbar-items .navbar-nav {
-            margin-top: -400px;
-        }
+ 
     }
 @media (min-width: 1024px) {
-    #navbar button {
-        margin-top: -1160px;
-        margin-left: 15px;
-        font-size: 50px;
-        }
-        #navbar-items .navbar-nav {
-            margin-top: -400px;
-        }
+ 
     }
-    @media (min-width: 1400px) {
-       #navbar-items .navbar-nav {
-            margin-top: -1760px;
-        }
+@media (min-width: 1400px) {
+   
     }
-    @media (min-width: 1600px) {
-        #navbar-items .navbar-nav {
-             margin-top: -1950px;
-        }
-     }
+@media (min-width: 1600px) {
+   
+    }
     
