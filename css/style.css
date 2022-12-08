@@ -16,6 +16,7 @@
     padding: 5px;
     transition: all .5s;
     border-radius: 50%;
+    position: fixed;
 }
 #btn-menu:hover {
     cursor: pointer;
