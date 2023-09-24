@@ -26,3 +26,36 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: blue;
     text-align: center;
 }
+
+#ilha {
+    padding-top: 1rem;
+}
+
+#polenta {
+    padding-top: 1rem;
+}
+
+#godinhos {
+    padding-top: 1rem;
+}
+
+#paraitinga {
+    padding-top: 1rem;
+}
+
+#paz {
+    padding-top: 1rem;
+}
+
+#fé {
+    padding-top: 1rem;
+}
+
+#esqueleto {
+    padding-top: 1rem;
+}
+
+.fotodidi {
+    margin-left: auto;
+    margin-right: auto;
+}
