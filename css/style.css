@@ -1,61 +1,83 @@
+ /* Estilos para as páginas */
+ .page {
+    display: none;
+    animation: fadeIn 1s ease forwards;
+}
 
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-.masthead {
-    padding-top: 3.5rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    color: #f56cac;
-    font-size: 20px;
-    background-image: url("../img/img/imagem-principal-novo-site.webp");
+/* A página ativa é exibida */
+.active {
+    display: block;
+}
+
+#page1 {
+    background-image: url(../img/imagem-principal.png);
+    width: 100%;
+    height: 650px;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    
+    position: relative;
+    background-position: center;
+
 }
 
-.texto-abre {
-font-size: 20px;
-color: rgb(91, 90, 90);
-font-weight: 500;
-text-align: center;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+#page2 {
+    background-image: url(../img/imagem-principal2.png);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+
 }
-#footer {
-    font-size: 12;
-    color: blue;
+
+#page1 button {
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 590px;
+    position: relative;
+}
+#page1 p {
+    letter-spacing: 3px;
+    text-align: center;
+    top: 490px;
+    position: relative;
+}
+#page2 button {
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 460px;
+    position: relative;
+}
+#page2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 540px;
+    position: relative;
     text-align: center;
 }
 
 #ilha {
-    padding-top: 1rem;
+    margin-top: 480px;
 }
 
-#polenta {
-    padding-top: 1rem;
-}
-
-#godinhos {
-    padding-top: 1rem;
-}
-
-#paraitinga {
-    padding-top: 1rem;
-}
-
-#paz {
-    padding-top: 1rem;
-}
-
-#fé {
-    padding-top: 1rem;
-}
-
-#esqueleto {
-    padding-top: 1rem;
-}
-
-.fotodidi {
-    margin-left: auto;
-    margin-right: auto;
+body {
+    margin: 0;
+    padding: 12px;
 }
