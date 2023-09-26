@@ -1,0 +1,84 @@
+ /* Estilos para as páginas */
+ .page {
+    display: none;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* A página ativa é exibida */
+.active {
+    display: block;
+}
+
+#page1 {
+    background-image: url(../img/imagem-principal.png);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+
+}
+
+#page2 {
+    background-image: url(../img/imagem-principal2.png);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+
+}
+
+#page1 button {
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 590px;
+    position: relative;
+}
+#page1 p {
+    letter-spacing: 3px;
+    text-align: center;
+    top: 490px;
+    position: relative;
+}
+#page2 button {
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 460px;
+    position: relative;
+}
+#page2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 540px;
+    position: relative;
+    text-align: center;
+}
+
+#ilha {
+    margin-top: 480px;
+}
+
+body {
+    margin: 0;
+    padding: 12px;
+}
+
