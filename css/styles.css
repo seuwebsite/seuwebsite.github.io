@@ -17,7 +17,7 @@
 #menuToggle {
     display: block;
     position: relative;
-    top: 435px;
+    top: 470px;
     left: 20px;
     
     z-index: 1;
@@ -188,7 +188,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 300px;
+    top: 50px;
     position: relative;
 }
 #page2 p {
@@ -196,7 +196,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 680px;
+    top: 650px;
     position: relative;
     text-align: center;
     font-family: 'Croissant One', cursive;
@@ -205,7 +205,7 @@
 }
 
 #ilha {
-    margin-top: 500px;
+    margin-top: 50px;
 }
 
 #caminho {
